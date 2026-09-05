@@ -1,0 +1,17 @@
+# macOS and Python-generated files
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Per-company, time-sensitive research data and generated screening outputs
+.value-investment-cache/
+screening-output/
+
+# Local research media and intermediate artefacts
+估值计算/02_视频转写稿/
+估值计算/03_分段视频/
+估值计算/04_截图资料/
+
+# Editor and local tool state
+.idea/
+.vscode/

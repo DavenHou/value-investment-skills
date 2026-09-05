@@ -1,0 +1,4 @@
+interface:
+  display_name: "纯现金覆盖率筛选"
+  short_description: "计算现金确定下限与严格净金融资产覆盖率"
+  default_prompt: "使用 $pure-cash-coverage，同时计算现金确定下限，以及纳入一年内低风险流动金融资产后的严格净金融资产覆盖率。"

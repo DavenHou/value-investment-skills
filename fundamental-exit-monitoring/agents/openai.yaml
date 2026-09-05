@@ -1,0 +1,4 @@
+interface:
+  display_name: "基本面退出监控"
+  short_description: "建立可验证的投资逻辑、退出条件、状态判断与压力损失区间"
+  default_prompt: "使用 $fundamental-exit-monitoring 检查这家公司当前投资逻辑是成立、减弱还是已经破坏。"

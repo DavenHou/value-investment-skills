@@ -1,0 +1,4 @@
+interface:
+  display_name: "企业估值计算"
+  short_description: "用同口径TTM市赚率、三年情景和杜邦结构计算价格带"
+  default_prompt: "使用 $company-valuation-calculation 计算指定股份同口径PE_TTM／ROE_TTM市赚率，完成三年情景、公司历史与杜邦拆解后给出条件价格带。"

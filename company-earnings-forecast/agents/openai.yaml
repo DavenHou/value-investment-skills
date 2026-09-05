@@ -1,0 +1,4 @@
+interface:
+  display_name: "业绩预测"
+  short_description: "通过产业链、周期、资本开支与财报证据预测一至三年公司业绩"
+  default_prompt: "Use $company-earnings-forecast to build a source-backed three-year earnings forecast for a company."

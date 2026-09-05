@@ -1,0 +1,4 @@
+interface:
+  display_name: "仓位控制"
+  short_description: "结合跌幅、压力损失和市场差异生成集中建仓方案"
+  default_prompt: "使用 $portfolio-position-sizing 给出首仓、加仓、深度价值与极端错价档位，同时显示较现价跌幅和压力损失。"

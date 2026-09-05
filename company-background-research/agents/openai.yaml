@@ -1,0 +1,4 @@
+interface:
+  display_name: "公司背景查询"
+  short_description: "建立可核验、含股东回报与线下核验的公司质量评分研究档案"
+  default_prompt: "使用 $company-background-research 调研一家公司的背景，给出100分质量评分、股东回报、证据和线下核验计划。"
