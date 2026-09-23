@@ -15,7 +15,7 @@ Build a conditional operating forecast, not a price target or investment recomme
 
 ## Investment-pipeline gate
 
-When the forecast will feed valuation or position sizing, first read `company-background-research.research_handoff`. Continue only when `research_status: pass` and `eligible_next_step: earnings_forecast`. For `conditional`, `fail`, `insufficient`, missing, or stale handoffs, stop the actionable pipeline and report the remediation requirement. A standalone forecast requested for planning or analysis may still be produced, but label `forecast_handoff.forecast_status: non_actionable` so downstream skills cannot treat it as an approved investment input.
+For the full investment pipeline or position sizing, first read `company-background-research.research_handoff`. Continue to an actionable investment handoff only when `research_status: pass` and `eligible_next_step: earnings_forecast`; otherwise report the remediation requirement. For `quick_valuation`, background research is skipped by scope: a source-backed, internally reconciled three-year forecast may have `forecast_status: usable` and `eligible_next_step: valuation` for valuation only, with `upstream_research_status: skipped_by_scope`. This does not authorize position sizing. A standalone forecast requested only for planning or analysis remains `non_actionable`.
 
 ## Set the forecast horizon
 
@@ -104,6 +104,8 @@ ROA_year = attributable net profit / average total assets
 
 Use beginning/end averages adjusted for the timing of material issuance, buybacks, dividends, acquisitions or disposals. If assets or equity cannot be forecast credibly, leave ROE/ROA empty and mark the handoff conditional; do not infer them from the income statement alone.
 
+For every valuation-bound F1–F3 handoff, retain the calculation bridge for attributable net profit, beginning／ending attributable equity, beginning／ending total assets, and the resulting average balances. Bear-case ROE and ROA are outputs of that bridge, never direct analyst inputs or placeholders. Do not backsolve profit or balance-sheet values from a desired ROE. If any year cannot be reconciled from disclosed starting balances and explicitly stated operating／capital assumptions, mark that year and the overall handoff `conditional／insufficient`; downstream valuation must not use the unsupported years for normalized profitability, decision PR, or price bands.
+
 ### 5. Test the business and industry assumptions
 
 Use the five-force check in `references/forecast-framework.md`:
@@ -162,7 +164,7 @@ forecast_handoff:
   evidence_cutoff: YYYY-MM-DD
   company:
   security:
-  upstream_research_status: pass | conditional | fail | insufficient | missing
+  upstream_research_status: pass | conditional | fail | insufficient | missing | skipped_by_scope
   forecast_status: usable | conditional | unusable | non_actionable
   horizon:
   accounting_basis:
@@ -222,6 +224,6 @@ forecast_handoff:
   eligible_next_step: valuation | remediation_only
 ```
 
-Only a source-backed, internally reconciled forecast with an upstream research pass may be `usable` and eligible for valuation. Unknown numeric fields stay empty.
+`forecast_status: usable` means the forecast skill has calculated and reconciled its outputs from dated source facts and explicitly stated scenario inputs. Forecast ROE／ROA are calculated model results, not directly assumed ROE／ROA or reported facts; do not reject them solely because future operating or capital inputs are scenarios. A full actionable pipeline also requires an upstream research pass; `quick_valuation` may consume the valuation-only exception above. Unknown numeric fields stay empty.
 
 Use ranges, directional language, or an insufficient-evidence conclusion when inputs cannot support precise numerical estimates.

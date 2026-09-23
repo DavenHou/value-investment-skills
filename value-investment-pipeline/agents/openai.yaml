@@ -1,4 +1,4 @@
 interface:
   display_name: "一键价值投资分析"
   short_description: "一条命令完成条件估值、风险验证和分批仓位"
-  default_prompt: "使用 $value-investment-pipeline 对指定公司执行一键分析，以同口径TTM或周期路径、三年情景和杜邦拆解为估值基础，默认只给结论、价格、跌幅、仓位和触发器。"
+  default_prompt: "使用 $value-investment-pipeline 对指定公司执行分析；普通“跑一下”走快速模式，默认只展示核心决策卡与估值价格带，只有明确要求完整分析时才展示全流程。"

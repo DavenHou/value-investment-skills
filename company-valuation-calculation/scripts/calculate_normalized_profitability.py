@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build neutral and conservative normalized ROE/ROA scenarios."""
+"""Build bullish, neutral, and conservative normalized ROE/ROA scenarios."""
 
 from __future__ import annotations
 
@@ -24,13 +24,13 @@ class Policy:
 
 
 POLICIES = {
-    "stable": Policy(3, 0.60, 2.0, 0.40, 2.0),
+    "stable": Policy(3, 0.50, 2.0, 0.50, 2.0),
     "cyclical": Policy(10, 0.70, 6.0, 0.30, 2.0),
     "technology": Policy(5, 0.50, 3.0, 0.50, 1.5),
 }
 
 DEFAULT_WEIGHTS = {
-    "stable": ([0.15, 0.20, 0.25], [0.20, 0.12, 0.08]),
+    "stable": ([0.125, 1 / 6, 5 / 24], [0.20, 0.20, 0.10]),
     "cyclical": (
         [0.03, 0.04, 0.05, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.13],
         [0.15, 0.10, 0.05],
@@ -153,9 +153,11 @@ def calculate(
     historical_roe: list[float],
     forecast_bear_roe: list[float],
     forecast_base_roe: list[float] | None = None,
+    forecast_bull_roe: list[float] | None = None,
     historical_roa: list[float] | None = None,
     forecast_bear_roa: list[float] | None = None,
     forecast_base_roa: list[float] | None = None,
+    forecast_bull_roa: list[float] | None = None,
     current_ttm_roe: float | None = None,
     current_ttm_roa: float | None = None,
     current_weak_roe: float | None = None,
@@ -181,17 +183,25 @@ def calculate(
         raise ValueError("stable companies require at least three comparable full fiscal years")
     if forecast_base_roe is not None and len(forecast_base_roe) != 3:
         raise ValueError("forecast_base_roe must contain exactly three full fiscal years")
+    if forecast_bull_roe is not None and len(forecast_bull_roe) != 3:
+        raise ValueError("forecast_bull_roe must contain exactly three full fiscal years")
     if historical_roa is not None and len(historical_roa) != len(historical_roe):
         raise ValueError("historical_roa length must match historical_roe")
     if forecast_bear_roa is not None and len(forecast_bear_roa) != 3:
         raise ValueError("forecast_bear_roa must contain exactly three full fiscal years")
     if forecast_base_roa is not None and len(forecast_base_roa) != 3:
         raise ValueError("forecast_base_roa must contain exactly three full fiscal years")
+    if forecast_bull_roa is not None and len(forecast_bull_roa) != 3:
+        raise ValueError("forecast_bull_roa must contain exactly three full fiscal years")
     if (historical_roa is None) != (forecast_bear_roa is None):
         raise ValueError("provide both historical_roa and forecast_bear_roa, or neither")
     if (forecast_base_roe is None) != (forecast_base_roa is None and historical_roa is not None):
         if historical_roa is not None:
             raise ValueError("when ROA series are supplied, provide both forecast_base_roe and forecast_base_roa, or neither")
+    if historical_roa is not None and (forecast_bull_roe is None) != (forecast_bull_roa is None):
+        raise ValueError("when ROA series are supplied, provide both forecast_bull_roe and forecast_bull_roa, or neither")
+    if historical_roa is None and forecast_bull_roa is not None:
+        raise ValueError("forecast_bull_roa requires historical_roa")
     if historical_mode not in {"conservative", "weighted"}:
         raise ValueError("historical_mode must be conservative or weighted")
     if historical_roa is None and current_weak_roa is not None:
@@ -249,10 +259,14 @@ def calculate(
         )
 
     blend_usable = forecast_confidence != "low"
-    if forecast_confidence == "medium":
+    if forecast_confidence == "medium" and company_type != "stable":
         f_share *= 0.75
         h_share = 1.0 - f_share
         warnings.append("medium forecast confidence: forecast block reduced to 75% of default")
+    elif forecast_confidence == "medium":
+        warnings.append(
+            "medium forecast confidence: stable-company normalization keeps its fixed 50/50 split; confidence label only"
+        )
     elif forecast_confidence == "low":
         warnings.append("low forecast confidence: history and forecast are shown separately; no blend")
     elif forecast_confidence != "high":
@@ -380,20 +394,50 @@ def calculate(
     history_anchor_roe = (
         history_conservative_roe if historical_mode == "conservative" else history_recent_roe
     )
+    cycle_five_year_low_index = (
+        min(range(len(historical_roe) - 5, len(historical_roe)), key=historical_roe.__getitem__)
+        if company_type == "cyclical" and len(historical_roe) >= 5
+        else None
+    )
+    if company_type == "cyclical" and cycle_five_year_low_index is None:
+        warnings.append("cyclical five-year minimum ROE needs five comparable full years; no actionable blend")
+    normalized_history_anchor_roe = (
+        historical_roe[cycle_five_year_low_index]
+        if cycle_five_year_low_index is not None
+        else history_conservative_roe if company_type == "stable" else history_anchor_roe
+    )
+    neutral_history_anchor_roe = (
+        history_conservative_roe if company_type == "stable" else history_neutral_roe
+    )
     forecast_roe = block_average(forecast_bear_roe, f_weights)
     forecast_base_roe_average = (
         block_average(forecast_base_roe, f_weights)
         if forecast_base_roe is not None
         else None
     )
+    forecast_bull_roe_average = (
+        block_average(forecast_bull_roe, f_weights)
+        if forecast_bull_roe is not None
+        else None
+    )
     normalized_bear_roe = (
-        h_share * history_anchor_roe + f_share * forecast_roe
-        if blend_usable
+        h_share * normalized_history_anchor_roe + f_share * forecast_roe
+        if blend_usable and (company_type != "cyclical" or cycle_five_year_low_index is not None)
+        else None
+    )
+    cycle_60_40_roe = (
+        0.60 * normalized_history_anchor_roe + 0.40 * forecast_roe
+        if company_type == "cyclical" and cycle_five_year_low_index is not None and blend_usable
         else None
     )
     normalized_neutral_roe = (
-        h_share * history_neutral_roe + f_share * forecast_base_roe_average
+        h_share * neutral_history_anchor_roe + f_share * forecast_base_roe_average
         if blend_usable and forecast_base_roe_average is not None
+        else None
+    )
+    normalized_bull_roe = (
+        h_share * neutral_history_anchor_roe + f_share * forecast_bull_roe_average
+        if blend_usable and forecast_bull_roe_average is not None
         else None
     )
 
@@ -433,7 +477,11 @@ def calculate(
             "ROE above 40%: PR/ROE output is diagnostic only until buybacks, equity shrinkage, leverage and ROA/ROIC/FCF are reviewed"
         )
     neutral_anchor_gate_passed = (
-        stable_neutral_anchor_usable if company_type == "stable" else True
+        stable_neutral_anchor_usable
+        if company_type == "stable"
+        else cycle_phase_status == "complete_phase_balanced"
+        if company_type == "cyclical"
+        else True
     )
     high_roe_gate_passed = (
         not high_roe_triggered
@@ -445,6 +493,15 @@ def calculate(
     )
     roe_pr_executable = bool(
         blend_usable and neutral_anchor_gate_passed and high_roe_gate_passed
+        and (
+            company_type != "cyclical"
+            or (
+                cycle_five_year_low_index is not None
+                and historical_roe[cycle_five_year_low_index] > 0
+                and normalized_bear_roe is not None
+                and normalized_bear_roe > 0
+            )
+        )
     )
 
     result: dict[str, Any] = {
@@ -458,6 +515,7 @@ def calculate(
             "historical_oldest_to_newest": h_weights,
             "forecast_bear_nearest_to_farthest": f_weights,
             "forecast_base_nearest_to_farthest": f_weights if forecast_base_roe is not None else None,
+            "forecast_bull_nearest_to_farthest": f_weights if forecast_bull_roe is not None else None,
             "history_share": h_share,
             "forecast_share": f_share,
         },
@@ -465,6 +523,9 @@ def calculate(
             "rule": "weakest_40_percent_minimum_two_years_selected_by_roe",
             "selected_year_indices_oldest_is_1": [index + 1 for index in weak_indices],
             "selected_year_count": len(weak_indices),
+            "cycle_five_year_low_index_oldest_is_1": (
+                cycle_five_year_low_index + 1 if cycle_five_year_low_index is not None else None
+            ),
             "current_weak_source": (
                 "latest_completed_historical_year" if current_weak_roe is None else "user_supplied_current_weak_run_rate"
             ),
@@ -476,7 +537,7 @@ def calculate(
                 if cycle_phase_status == "complete_phase_balanced"
                 else "complete_cycle_equal_weight_provisional"
                 if cycle_phase_status == "provisional_equal_weight"
-                else "latest_three_comparable_full_years_equal_weight"
+                else "historical_conservative_anchor_shared_with_bear"
                 if company_type == "stable"
                 else "recent_weighted"
             ),
@@ -555,11 +616,15 @@ def calculate(
             "historical_lower_tail_weighted_average": history_lower_tail_roe,
             "current_weak_run_rate": current_weak_roe_value,
             "historical_conservative_anchor": history_conservative_roe,
-            "historical_anchor_used": history_anchor_roe,
+            "historical_anchor_used": normalized_history_anchor_roe,
+            "historical_anchor_used_for_normalized_neutral": neutral_history_anchor_roe,
             "forecast_bear_weighted_average": forecast_roe,
             "forecast_base_weighted_average": forecast_base_roe_average,
+            "forecast_bull_weighted_average": forecast_bull_roe_average,
             "normalized_neutral": normalized_neutral_roe,
+            "normalized_bull": normalized_bull_roe,
             "normalized_bear": normalized_bear_roe,
+            "cyclical_60_40_sensitivity_non_executable": cycle_60_40_roe,
             "normalized": normalized_bear_roe,
         },
         "warnings": warnings,
@@ -592,20 +657,43 @@ def calculate(
         history_anchor_roa = (
             history_conservative_roa if historical_mode == "conservative" else history_recent_roa
         )
+        normalized_history_anchor_roa = (
+            historical_roa[cycle_five_year_low_index]
+            if cycle_five_year_low_index is not None
+            else history_conservative_roa if company_type == "stable" else history_anchor_roa
+        )
+        neutral_history_anchor_roa = (
+            history_conservative_roa if company_type == "stable" else history_neutral_roa
+        )
         forecast_roa = block_average(forecast_bear_roa, f_weights)
         forecast_base_roa_average = (
             block_average(forecast_base_roa, f_weights)
             if forecast_base_roa is not None
             else None
         )
+        forecast_bull_roa_average = (
+            block_average(forecast_bull_roa, f_weights)
+            if forecast_bull_roa is not None
+            else None
+        )
         normalized_bear_roa = (
-            h_share * history_anchor_roa + f_share * forecast_roa
-            if blend_usable
+            h_share * normalized_history_anchor_roa + f_share * forecast_roa
+            if blend_usable and (company_type != "cyclical" or cycle_five_year_low_index is not None)
+            else None
+        )
+        cycle_60_40_roa = (
+            0.60 * normalized_history_anchor_roa + 0.40 * forecast_roa
+            if company_type == "cyclical" and cycle_five_year_low_index is not None and blend_usable
             else None
         )
         normalized_neutral_roa = (
-            h_share * history_neutral_roa + f_share * forecast_base_roa_average
+            h_share * neutral_history_anchor_roa + f_share * forecast_base_roa_average
             if blend_usable and forecast_base_roa_average is not None
+            else None
+        )
+        normalized_bull_roa = (
+            h_share * neutral_history_anchor_roa + f_share * forecast_bull_roa_average
+            if blend_usable and forecast_bull_roa_average is not None
             else None
         )
         result["roa_percent"] = {
@@ -615,11 +703,15 @@ def calculate(
             "historical_lower_tail_weighted_average_same_roe_years": history_lower_tail_roa,
             "current_weak_run_rate": current_weak_roa_value,
             "historical_conservative_anchor": history_conservative_roa,
-            "historical_anchor_used": history_anchor_roa,
+            "historical_anchor_used": normalized_history_anchor_roa,
+            "historical_anchor_used_for_normalized_neutral": neutral_history_anchor_roa,
             "forecast_bear_weighted_average": forecast_roa,
             "forecast_base_weighted_average": forecast_base_roa_average,
+            "forecast_bull_weighted_average": forecast_bull_roa_average,
             "normalized_neutral": normalized_neutral_roa,
+            "normalized_bull": normalized_bull_roa,
             "normalized_bear": normalized_bear_roa,
+            "cyclical_60_40_sensitivity_non_executable": cycle_60_40_roa,
             "normalized": normalized_bear_roa,
         }
         if blend_usable and normalized_bear_roa is not None and normalized_bear_roa > 0:
@@ -647,15 +739,17 @@ def calculate(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Build neutral and conservative normalized annual ROE/ROA. History: oldest to newest; forecast: nearest to farthest."
+        description="Build bullish, neutral, and conservative normalized annual ROE/ROA. History: oldest to newest; forecast: nearest to farthest."
     )
     parser.add_argument("--company-type", choices=sorted(POLICIES), required=True)
     parser.add_argument("--historical-roe", type=parse_series, required=True)
     parser.add_argument("--forecast-bear-roe", type=parse_series, required=True)
     parser.add_argument("--forecast-base-roe", type=parse_series)
+    parser.add_argument("--forecast-bull-roe", type=parse_series)
     parser.add_argument("--historical-roa", type=parse_series)
     parser.add_argument("--forecast-bear-roa", type=parse_series)
     parser.add_argument("--forecast-base-roa", type=parse_series)
+    parser.add_argument("--forecast-bull-roa", type=parse_series)
     parser.add_argument("--current-ttm-roe", type=float)
     parser.add_argument("--current-ttm-roa", type=float)
     parser.add_argument("--current-weak-roe", type=float)
@@ -704,9 +798,11 @@ def main() -> None:
             historical_roe=args.historical_roe,
             forecast_bear_roe=args.forecast_bear_roe,
             forecast_base_roe=args.forecast_base_roe,
+            forecast_bull_roe=args.forecast_bull_roe,
             historical_roa=args.historical_roa,
             forecast_bear_roa=args.forecast_bear_roa,
             forecast_base_roa=args.forecast_base_roa,
+            forecast_bull_roa=args.forecast_bull_roa,
             current_ttm_roe=args.current_ttm_roe,
             current_ttm_roa=args.current_ttm_roa,
             current_weak_roe=args.current_weak_roe,

@@ -1,6 +1,6 @@
 # 主动监控计划｜2026-08-30基准
 
-本文件是当前个人监控快照，不是永久估值参数。每次正式财报、股份变化或估值重算后必须更新`baseline_date`、基准价、同口径PE_TTM／ROE_TTM／PR_TTM、稳定企业三年ROE分级及放宽仓位与重新确认日历、ROE超过40%时的财技复核、杜邦状态、价格带和目标仓位；不得继续沿用旧阈值。未带`valuation_model_version: ttm-pr-dupont-v4`的既有记录视为`requires_migration`，只能触发复核，不能直接解锁新增仓位或估值清仓。
+本文件是当前个人监控快照，不是永久估值参数。每次正式财报、股份变化或估值重算后必须更新`baseline_date`、基准价、同口径PE_TTM／ROE_TTM／PR_TTM、稳定企业三年ROE分级及放宽仓位与重新确认日历、ROE超过40%时的财技复核、杜邦状态、价格带和目标仓位；不得继续沿用旧阈值。未带`valuation_model_version: ttm-pr-cutoff-locked-v6`的既有记录视为`requires_migration`，只能触发复核，不能直接解锁新增仓位或估值清仓。
 
 ## 1. 当前目标仓位
 

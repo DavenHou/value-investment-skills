@@ -15,3 +15,9 @@ screening-output/
 # Editor and local tool state
 .idea/
 .vscode/
+
+# Local planning, build, delivery, and restore artefacts
+.planning/
+.codex-build/
+.outputs/
+backups/
