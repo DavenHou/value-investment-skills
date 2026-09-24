@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "company_identity": {
+    "legal_name": "JD.com, Inc.",
+    "security": "09618",
+    "market": "HKEX",
+    "currency": "HKD",
+    "share_class": "Class A ordinary share",
+    "identity_checked_at": "2026-09-01"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 64.3,
+    "evidence_coverage_percent": 88.0,
+    "confidence": "medium",
+    "evidence_cutoff": "2026-08-31",
+    "source_fingerprints": [
+      "JD-2025-20F",
+      "JD-2026-Q2-6K-0001193125-26-347753"
+    ]
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "JD-2026-Q2-6K-0001193125-26-347753",
+    "evidence_cutoff": "2026-08-13",
+    "base_eps": 12.65,
+    "bear_eps": 9.20,
+    "neutral_roe_percent": 14.0,
+    "bear_roe_percent": 10.0,
+    "neutral_roa_percent": 4.2,
+    "bear_roa_percent": 3.0,
+    "source_fingerprints": [
+      "JD-2025-20F",
+      "JD-2026-Q2-6K-0001193125-26-347753"
+    ]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-09-01",
+    "share_count": 2688000000,
+    "price_bands": {
+      "initial_entry": [65.13, 71.64],
+      "major_add": [52.10, 65.13],
+      "deep_value": [39.08, 52.10],
+      "extreme_mispricing": [32.56, 39.08]
+    },
+    "source_fingerprints": [
+      "JD-2026-Q2-6K-0001193125-26-347753",
+      "09618-price-2026-08-31"
+    ]
+  },
+  "exit_handoff": {
+    "fundamental_status": "intact",
+    "add_permission": "allowed",
+    "evidence_cutoff": "2026-08-13",
+    "weakened_loss_high_percent": null,
+    "broken_loss_high_percent": null
+  },
+  "peer_timing": {
+    "universe": ["BABA", "PDD", "VIPS"],
+    "universe_checked_at": "2026-09-01",
+    "last_price_date": "2026-08-31",
+    "status": "weak_peers_not_stabilized"
+  },
+  "price_snapshot": {
+    "price": 112.20,
+    "price_date": "2026-08-31",
+    "fx_rate": 7.80,
+    "fx_date": "2026-09-01"
+  },
+  "invalidation_triggers": [
+    "new_periodic_report_or_profit_warning",
+    "audit_governance_vie_or_material_regulatory_event",
+    "jd_retail_operating_margin_below_4_percent",
+    "two_consecutive_quarters_product_revenue_decline_above_5_percent",
+    "ttm_free_cash_flow_below_rmb20bn",
+    "share_rights_or_ads_ratio_change"
+  ],
+  "run_metadata": {
+    "mode": "full_rebuild",
+    "official_change_check_at": "2026-09-01",
+    "next_mode_if_no_new_filing": "quick_refresh",
+    "quality_score_revision": "corrected_to_previously_confirmed_scorecard_result_64.3",
+    "unsupported_stress_fields_removed_at": "2026-09-01"
+  },
+  "updated_at": "2026-09-01"
+}

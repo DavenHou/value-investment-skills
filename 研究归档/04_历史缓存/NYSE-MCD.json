@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.2",
+  "company_identity": {
+    "legal_name": "McDonald's Corporation",
+    "security": "MCD",
+    "market": "NYSE",
+    "currency": "USD",
+    "identity_checked_at": "2026-09-06"
+  },
+  "run": {
+    "mode": "full_rebuild_stopped_at_valuation",
+    "as_of": "2026-09-06",
+    "latest_filing_id": "SEC:0000063908-26-000073:2026-06-30",
+    "latest_filing_date": "2026-08-07",
+    "price_date": "2026-09-04",
+    "price_usd": 255.69
+  },
+  "reported_ttm": {
+    "basis": "GAAP diluted EPS and net income; FY2025 less H1 2025 plus H1 2026",
+    "net_income_usd_millions": 8787,
+    "diluted_eps_usd": 12.31,
+    "revenue_usd_millions": 27702,
+    "pe_ttm": 20.7717,
+    "source_fingerprints": [
+      "SEC:0000063908-26-000035:FY2025",
+      "SEC:0000063908-26-000073:H1-2026"
+    ]
+  },
+  "capital_structure_review": {
+    "status": "buyback_or_leverage_distorted",
+    "june_30_2026_total_assets_usd_millions": 59920,
+    "december_31_2025_total_assets_usd_millions": 59515,
+    "average_assets_usd_millions": 59717.5,
+    "ttm_roa_percent": 14.7142,
+    "june_30_2026_shareholders_equity_deficit_usd_millions": -1023,
+    "december_31_2025_shareholders_equity_deficit_usd_millions": -1791,
+    "june_30_2026_long_term_debt_usd_millions": 39863,
+    "roe_ttm_percent": null,
+    "roe_reason": "Both beginning and ending shareholders' equity are deficits; ROE and PE/ROE PR are not meaningful. ROA is retained only as an asset-efficiency and leverage check."
+  },
+  "valuation_handoff": {
+    "status": "non_actionable",
+    "pr_ttm": null,
+    "price_bands": null,
+    "reason": "The stable-company PE_TTM/ROE_TTM PR path is blocked by a negative-equity capital structure. A separate, source-backed normal-capital-structure or enterprise-value method is required before formal valuation bands."
+  },
+  "position_handoff": {
+    "status": "non_executable",
+    "recommended_percent": 0,
+    "reason": "No valid formal valuation band or PR-based stress case is available."
+  },
+  "invalidation_triggers": [
+    "new_periodic_report_or_guidance",
+    "change_in_debt_or_shareholder_equity_deficit",
+    "global_comparable_sales_or_guest_counts_deteriorate",
+    "franchise_margin_or_cash_conversion_deteriorates"
+  ]
+}

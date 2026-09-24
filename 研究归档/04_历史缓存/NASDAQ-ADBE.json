@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.2",
+  "company_identity": {
+    "legal_name": "Adobe Inc.",
+    "security": "NASDAQ:ADBE",
+    "market": "NASDAQ",
+    "currency": "USD",
+    "share_class": "common stock",
+    "identity_checked_at": "2026-09-05"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 76.0,
+    "previous_score": 77.0,
+    "evidence_coverage_percent": 90.0,
+    "confidence": "medium",
+    "evidence_cutoff": "2026-09-03",
+    "source_fingerprints": [
+      "ADBE:Q2-FY26-release:2026-06-11",
+      "ADBE:CEO-transition:2026-09-03"
+    ],
+    "score_breakdown": {
+      "moat_and_customer_value": 18.0,
+      "growth_and_reinvestment": 12.0,
+      "unit_economics_and_financial_resilience": 12.0,
+      "management_governance_and_fairness": 6.5,
+      "capital_allocation_and_shareholder_returns": 13.5,
+      "earnings_quality_and_disclosure": 8.0,
+      "risk_resilience": 6.0
+    },
+    "technology_gate": {
+      "replaceability": 4.0,
+      "growth_durability": 4.0,
+      "pricing_power": 3.5,
+      "status": "pass_but_not_high_concentration"
+    }
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "ADBE:Q2-FY26-release:2026-06-11",
+    "evidence_cutoff": "2026-09-03",
+    "base_eps": 17.95,
+    "bear_eps": 15.30,
+    "forecast_years": ["FY2026", "FY2027", "FY2028"],
+    "base_eps_path": [17.95, 20.0, 22.0],
+    "bear_eps_path": [15.30, 15.75, 16.0],
+    "neutral_roe_percent": 42.0,
+    "bear_roe_percent": 33.6,
+    "neutral_roa_percent": 20.3,
+    "bear_roa_percent": 18.0,
+    "source_fingerprints": [
+      "ADBE:Q2-FY26-release:2026-06-11",
+      "ADBE:CEO-transition:2026-09-03"
+    ]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-09-05",
+    "valuation_model_version": "ttm-pr-dupont-v4",
+    "company_type": "technology_growth",
+    "extreme_roe_review_required": true,
+    "roe_reliability": "usable_with_caution",
+    "pr_roe_role": "scenario_auxiliary_with_sbc_and_buyback_caution",
+    "neutral_pr": 0.379,
+    "bear_pr": 0.556,
+    "decision_pr": 0.503,
+    "dupont_ttm": {
+      "net_margin_percent": 28.69,
+      "asset_turnover": 0.87,
+      "equity_multiplier": 2.53,
+      "roa_percent": 24.91,
+      "roe_percent": 62.95,
+      "average_method": "same_quarter_two_point_average"
+    },
+    "roa_adjustment": {
+      "status": "not_required",
+      "original_roa_percent": 24.91,
+      "corrected_roa_percent": null,
+      "profit_numerator": "TTM attributable net income USD 7.229 billion",
+      "asset_denominator_method": "average of FY2025 Q2 and FY2026 Q2 total assets",
+      "formula": "7.229 / ((28.107 + 29.933) / 2) = 24.91%",
+      "reason": "official same-quarter endpoint assets reproduce the original ROA; no correction is required",
+      "decision_use": "quality_and_leverage_check_only"
+    },
+    "price_bands": {
+      "initial_entry": [284.13, 312.55],
+      "major_add": [227.31, 284.13],
+      "deep_value": [170.48, 227.31],
+      "extreme_mispricing": [113.65, 170.48]
+    },
+    "source_fingerprints": [
+      "SEC:ADBE:FY2025-10K",
+      "SEC:ADBE:FY2025-Q2",
+      "SEC:ADBE:FY2026-Q2",
+      "ADBE:CEO-transition:2026-09-03"
+    ]
+  },
+  "exit_handoff": {
+    "fundamental_status": "intact",
+    "add_permission": "paused",
+    "evidence_cutoff": "2026-09-03",
+    "weakened_loss_high_percent": null,
+    "broken_loss_high_percent": null,
+    "ai_moat_review": {
+      "status": "user_policy_pause_pending_evidence",
+      "reason": "User judges AI substitution risk to Adobe's core creative-workflow moat as potentially material. No new position until customer behaviour, pricing, retention, share and unit-economics evidence tests whether the moat remains intact.",
+      "required_evidence": [
+        "two comparable reporting periods of paid-seat or subscription retention and use",
+        "realized pricing, discounting and gross-margin trend",
+        "customer migration or share evidence versus AI-native alternatives",
+        "evidence that Adobe's AI products preserve or improve paid workflow economics"
+      ],
+      "classification": "user risk policy; not a verified assertion that the moat is already broken"
+    }
+  },
+  "peer_timing": {
+    "universe": ["MSFT", "CRM", "ADSK", "DOCU"],
+    "universe_checked_at": "2026-09-05",
+    "last_price_date": "2026-09-03",
+    "status": "unconfirmed_no_verified_weak_peer_stabilization",
+    "note": "peer price timing is not used to upgrade the valuation or information-risk tranche"
+  },
+  "position_handoff": {
+    "status": "conditional_management_and_earnings_review",
+    "recommended_percent": 4.0,
+    "current_information_risk_tranche_percent": 4.0,
+    "valuation_supported_cumulative_percent": 4.0,
+    "broken_case_loss_percent": 60.0,
+    "implied_portfolio_loss_percent": 2.4,
+    "constraint": "management_transition; sbc_and_net_buyback_review; next_earnings_near"
+  },
+  "price_snapshot": {
+    "price": 285.75,
+    "price_date": "2026-09-03",
+    "note": "last completed US regular-session close; 2026-09-04 session was still open during refresh"
+  },
+  "invalidation_triggers": [
+    "Q3 FY2026 results on 2026-09-10",
+    "CEO transition becomes effective on 2026-12-01",
+    "permanent CFO appointment or material strategy change"
+  ],
+  "run_metadata": {
+    "mode": "full_rebuild_completed",
+    "official_change_check_at": "2026-09-05",
+    "next_mode_if_no_new_filing": "quick_refresh"
+  },
+  "updated_at": "2026-09-05"
+}

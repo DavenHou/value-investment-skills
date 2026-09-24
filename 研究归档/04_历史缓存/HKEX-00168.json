@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "company_identity": {
+    "legal_name": "青岛啤酒股份有限公司",
+    "security": "00168",
+    "market": "HKEX",
+    "currency": "HKD",
+    "share_class": "H",
+    "identity_checked_at": "2026-08-31"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 71.3,
+    "evidence_coverage_percent": 88.0,
+    "confidence": "medium",
+    "evidence_cutoff": "2026-08-31",
+    "source_fingerprints": [
+      "600600-2026-H1",
+      "600600-2025-annual"
+    ]
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "600600-2026-H1",
+    "evidence_cutoff": "2026-08-31",
+    "base_eps": 3.39,
+    "bear_eps": 3.12,
+    "neutral_roe_percent": 15.22,
+    "bear_roe_percent": 14.18,
+    "neutral_roa_percent": 8.82,
+    "bear_roa_percent": 8.25,
+    "source_fingerprints": [
+      "600600-2026-H1",
+      "600600-2025-annual"
+    ]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-08-31",
+    "share_count": 1364195121,
+    "price_bands": {
+      "initial_entry": [27.69, 30.47],
+      "major_add": [22.16, 27.69],
+      "deep_value": [16.62, 22.16],
+      "extreme_mispricing": [13.84, 16.62]
+    },
+    "source_fingerprints": [
+      "600600-2026-H1",
+      "00168-price-2026-08-31",
+      "HKDCNY-2026-08-31"
+    ]
+  },
+  "exit_handoff": {
+    "fundamental_status": "intact",
+    "add_permission": "allowed",
+    "evidence_cutoff": "2026-08-31",
+    "weakened_loss_high_percent": 30.4,
+    "broken_loss_high_percent": 64.0
+  },
+  "peer_timing": {
+    "universe": [],
+    "universe_checked_at": null,
+    "last_price_date": null,
+    "status": "insufficient"
+  },
+  "price_snapshot": {
+    "price": 40.64,
+    "price_date": "2026-08-31",
+    "fx_rate": 0.8651,
+    "fx_date": "2026-08-31"
+  },
+  "invalidation_triggers": [
+    "new_periodic_report_or_profit_warning",
+    "audit_or_governance_event",
+    "share_rights_or_share_count_change",
+    "hkd_cny_or_tax_path_material_change"
+  ],
+  "updated_at": "2026-09-01"
+}

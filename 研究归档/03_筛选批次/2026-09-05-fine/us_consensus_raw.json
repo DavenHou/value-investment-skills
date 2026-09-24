@@ -1,0 +1,82 @@
+{
+  "NASDAQ:PDD": {
+    "name": "PDD",
+    "earnings_per_share_forecast_next_fy": 10.19870876304,
+    "revenue_forecast_next_fy": 69539733496.26073
+  },
+  "NASDAQ:ADBE": {
+    "name": "ADBE",
+    "earnings_per_share_forecast_next_fy": 24.421405,
+    "revenue_forecast_next_fy": 26539040535
+  },
+  "NASDAQ:CHKP": {
+    "name": "CHKP",
+    "earnings_per_share_forecast_next_fy": 10.443949,
+    "revenue_forecast_next_fy": 2801847314
+  },
+  "NASDAQ:GOOGL": {
+    "name": "GOOGL",
+    "earnings_per_share_forecast_next_fy": 20.569482,
+    "revenue_forecast_next_fy": 497606056389
+  },
+  "NASDAQ:LULU": {
+    "name": "LULU",
+    "earnings_per_share_forecast_next_fy": 10.106991,
+    "revenue_forecast_next_fy": 10570915380
+  },
+  "NASDAQ:META": {
+    "name": "META",
+    "earnings_per_share_forecast_next_fy": 31.398611,
+    "revenue_forecast_next_fy": 254115544748
+  },
+  "NASDAQ:MSFT": {
+    "name": "MSFT",
+    "earnings_per_share_forecast_next_fy": 19.723885,
+    "revenue_forecast_next_fy": 390636932025
+  },
+  "NYSE:DECK": {
+    "name": "DECK",
+    "earnings_per_share_forecast_next_fy": 7.534283,
+    "revenue_forecast_next_fy": 5886984097
+  },
+  "NYSE:TJX": {
+    "name": "TJX",
+    "earnings_per_share_forecast_next_fy": 5.283072,
+    "revenue_forecast_next_fy": 64018909685
+  },
+  "NYSE:ARCO": {
+    "name": "ARCO",
+    "earnings_per_share_forecast_next_fy": 0.787395,
+    "revenue_forecast_next_fy": 5289306357
+  },
+  "NASDAQ:GCT": {
+    "name": "GCT",
+    "earnings_per_share_forecast_next_fy": 4.376667,
+    "revenue_forecast_next_fy": 1547486000
+  },
+  "NYSE:UHS": {
+    "name": "UHS",
+    "earnings_per_share_forecast_next_fy": 22.528523,
+    "revenue_forecast_next_fy": 18607862604
+  },
+  "NYSE:MUSA": {
+    "name": "MUSA",
+    "earnings_per_share_forecast_next_fy": 34.906,
+    "revenue_forecast_next_fy": 23182536613
+  },
+  "NASDAQ:OMAB": {
+    "name": "OMAB",
+    "earnings_per_share_forecast_next_fy": 7.384285,
+    "revenue_forecast_next_fy": 1010935306
+  },
+  "NYSE:WSM": {
+    "name": "WSM",
+    "earnings_per_share_forecast_next_fy": 9.508993,
+    "revenue_forecast_next_fy": 8271767139
+  },
+  "NYSE:GAP": {
+    "name": "GAP",
+    "earnings_per_share_forecast_next_fy": 2.426745,
+    "revenue_forecast_next_fy": 15538163879
+  }
+}

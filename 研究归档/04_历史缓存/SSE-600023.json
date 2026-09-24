@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "company_identity": {
+    "legal_name": "浙江浙能电力股份有限公司",
+    "security": "600023",
+    "market": "SSE",
+    "currency": "CNY",
+    "share_class": "A",
+    "identity_checked_at": "2026-09-02"
+  },
+  "research_handoff": {
+    "status": "fail",
+    "score": null,
+    "score_upper_bound": 49.0,
+    "confidence": "high_on_gate_failure",
+    "evidence_cutoff": "2026-08-29",
+    "reason": "2026H1 attributable profit fell 57.21%; revenue fell while gross margin contracted about 7.2 percentage points",
+    "source_fingerprints": ["600023-2026-h1-report"]
+  },
+  "forecast_handoff": {
+    "status": "blocked_by_quality_gate",
+    "latest_filing_id": "600023-2026-h1-report",
+    "evidence_cutoff": "2026-08-29",
+    "neutral_roe_percent": 6.933,
+    "bear_roe_percent": 1.409,
+    "note": "historical-cycle normalization only; not an executable forward forecast"
+  },
+  "valuation_handoff": {
+    "status": "non_actionable",
+    "calculated_at": "2026-09-02",
+    "ttm_pr": 1.59,
+    "historical_neutral_pr": 1.852,
+    "bear_pr": null,
+    "bear_pr_reason": "near-zero or negative-cycle profitability makes the mechanical result non-economic",
+    "price_sensitivity_not_fair_value": {
+      "pr_0_55": 1.45,
+      "pr_0_50": 1.32,
+      "pr_0_40": 1.06,
+      "pr_0_30": 0.79
+    }
+  },
+  "cash_coverage": {
+    "status": "negative",
+    "cash_billion_cny": 16.145,
+    "restricted_cash_billion_cny": 0.379,
+    "estimated_interest_bearing_financing_billion_cny": 46.15,
+    "estimated_net_financial_assets_billion_cny": -30.38,
+    "estimated_market_cap_coverage_percent": -46.4
+  },
+  "exit_handoff": {
+    "fundamental_status": "weakened",
+    "add_permission": "stopped",
+    "historical_peak_pr_sample_count": 0,
+    "historical_h": null,
+    "historical_s": null,
+    "historical_m": null,
+    "pr_1_price_on_current_ttm_basis": 3.08,
+    "note": "current PR already exceeds 1, but depressed earnings make this a review trigger rather than a mechanical sell instruction",
+    "evidence_cutoff": "2026-09-02"
+  },
+  "peer_timing": {
+    "universe": ["600886", "600795", "600011", "000539", "600021"],
+    "universe_checked_at": "2026-09-02",
+    "last_price_date": "2026-09-01 scanner; daily history through 2026-08-31",
+    "status": "bear_leading",
+    "target_structural_role": "regional_leader_with_weakened_current_fundamentals",
+    "strong_benchmark_group": ["600886", "600795"],
+    "industry_position_strong_financially_fragile": ["600011"],
+    "structural_weak_group": ["000539", "600021"],
+    "weak_peers_stopped_new_lows_count": 0,
+    "note": "000539 and 600021 both made new 20-day lows on 2026-08-31; the weak-first-stabilization condition is absent"
+  },
+  "price_snapshot": {
+    "price": 4.88,
+    "price_date": "2026-09-01"
+  },
+  "position_handoff": {
+    "status": "disabled",
+    "recommended_percent": 0.0,
+    "reason": "quality gate failed and valuation handoff is non-actionable"
+  },
+  "invalidation_triggers": [
+    "next_comparable_period_revenue_and_margin_fail_to_stabilize",
+    "operating_cash_flow_deteriorates_while_net_debt_rises",
+    "dividend_is_cut_without_a_balance_sheet_repair rationale",
+    "price_below_4.49_or_above_5.27"
+  ],
+  "run_metadata": {
+    "mode": "full_rebuild",
+    "next_mode_if_no_new_filing": "quick_refresh_after_failed_gate"
+  },
+  "updated_at": "2026-09-02"
+}

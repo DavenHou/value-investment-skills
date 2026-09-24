@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.2",
+  "company_identity": {
+    "legal_name": "NVIDIA Corporation",
+    "security": "NVDA",
+    "market": "NASDAQ",
+    "currency": "USD",
+    "share_class": "common stock",
+    "identity_checked_at": "2026-09-08"
+  },
+  "run": {
+    "mode": "full_rebuild_stopped_at_research_gate",
+    "official_change_check_at": "2026-09-08",
+    "latest_filing_id": "SEC:0001045810-26-000075:2026-07-26",
+    "latest_filing_date": "2026-08-26"
+  },
+  "research_handoff": {
+    "status": "insufficient",
+    "score": null,
+    "evidence_coverage_percent": null,
+    "confidence": "low",
+    "evidence_cutoff": "2026-08-26",
+    "technology_gate_status": "insufficient",
+    "reason": "No complete formal scorecard or independent cross-evidence has yet established all three full-technology gates, particularly switching-cost and post-price-change customer-retention evidence.",
+    "source_fingerprints": [
+      "SEC:0001045810-26-000075:FY2027-Q2",
+      "SEC:0001045810-26-000021:FY2026-10K",
+      "MLCommons:MLPerf-Training-v6.0"
+    ]
+  },
+  "reported_ttm_diagnostic": {
+    "basis": "GAAP FY2026 less H1 FY2026 plus H1 FY2027; diluted EPS uses the same arithmetic",
+    "net_income_usd_millions": 192880,
+    "diluted_eps_usd": 7.91,
+    "price_usd": 230.35,
+    "price_date": "2026-09-04",
+    "pe_ttm": 29.1214,
+    "roe_ttm_two_point_average_equity_percent": 117.211,
+    "pr_ttm_diagnostic_only": 0.248452,
+    "warning": "H1 FY2027 GAAP income includes $23.707bn gains from equity securities; the TTM ROE/PR is not yet a comparable recurring-profit valuation input."
+  },
+  "capital_structure_review": {
+    "extreme_roe_review_required": true,
+    "roe_reliability": "insufficient",
+    "pr_roe_role": "diagnostic_only",
+    "july_26_2026_shareholders_equity_usd_millions": 228984,
+    "january_25_2026_shareholders_equity_usd_millions": 157293,
+    "july_26_2026_total_debt_usd_millions": 33366,
+    "required_remediation": [
+      "Rebuild TTM recurring profit excluding mark-to-market equity-security gains with tax treatment reconciled.",
+      "Use five quarter-end balance-sheet observations for ROE and ROA.",
+      "Complete normal-capital-structure ROE and three-year balance-sheet scenarios."
+    ]
+  },
+  "forecast_handoff": {
+    "status": "non_actionable",
+    "reason": "Upstream research gate is insufficient; only Q3 FY2027 company guidance is available as formal forward guidance."
+  },
+  "valuation_handoff": {
+    "status": "non_actionable",
+    "price_bands": null,
+    "reason": "No usable three-year forecast, recurring ROE/ROA path, or full technology-gate pass."
+  },
+  "position_handoff": {
+    "status": "non_executable",
+    "recommended_percent": 0,
+    "reason": "The pipeline stopped before forecast and valuation handoffs."
+  },
+  "invalidation_triggers": [
+    "new 10-Q, 10-K, earnings guidance, or material 8-K",
+    "AI cloud partner commitments, guarantees, customer concentration, or supply commitments change materially",
+    "independent evidence on switching costs, customer retention, or price realization becomes available"
+  ],
+  "updated_at": "2026-09-08"
+}

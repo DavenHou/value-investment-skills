@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.4",
+  "company_identity": {
+    "legal_name": "贵州茅台酒股份有限公司",
+    "security": "600519",
+    "market": "SSE",
+    "currency": "CNY",
+    "share_class": "A",
+    "identity_checked_at": "2026-09-09"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 77.5,
+    "evidence_coverage_percent": 91.0,
+    "confidence": "medium-high",
+    "evidence_cutoff": "2026-08-15",
+    "source_fingerprints": [
+      "SSE:600519_20260417_9QS4:2025-annual",
+      "CNINFO:1225475868:2026-h1"
+    ]
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "CNINFO:1225475868:2026-h1",
+    "evidence_cutoff": "2026-08-15",
+    "accounting_basis": "Attributable net profit excluding immaterial non-recurring items; FY2026-FY2028 are scenario assumptions, not company guidance.",
+    "forecast_years": ["2026", "2027", "2028"],
+    "base_eps": 69.196,
+    "bear_eps": 67.196,
+    "bull_eps": 71.196,
+    "base_eps_path": [69.196, 72.795, 76.395],
+    "bear_eps_path": [67.196, 68.396, 69.996],
+    "bull_eps_path": [71.196, 77.595, 83.995],
+    "neutral_roe_percent": 34.3,
+    "bear_roe_percent": 33.1,
+    "neutral_roa_percent": 27.7,
+    "bear_roa_percent": 26.8,
+    "scenario_assumptions": {
+      "base": "FY2026 revenue CNY178.1bn and core net profit CNY86.5bn; FY2027-FY2028 retain mid-single-digit revenue and profit growth as volume/mix recover from the H1 slowdown.",
+      "bear": "FY2026 revenue CNY174.6bn and core net profit CNY84.0bn; subsequent years assume low-single-digit recovery with persistent channel and price pressure.",
+      "bull": "FY2026 revenue CNY182.0bn and core net profit CNY89.0bn; subsequent years assume stronger volume and product-mix recovery.",
+      "capital": "ROE paths assume ordinary cash payout remains near the recent three-year level and no material change in share class."
+    },
+    "source_fingerprints": ["CNINFO:1225475868:2026-h1", "SSE:600519_20260417_9QS4:2025-annual"]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-09-21",
+    "valuation_model_version": "ttm-pr-cutoff-locked-v5",
+    "company_type": "stable",
+    "market_pr_policy_version": "a-share-pr-1.00-exit-review-v1",
+    "ttm_period_end": "2026-06-30",
+    "accounting_basis": "TTM core attributable profit = FY2025 core profit - H1 2025 core profit + H1 2026 core profit; non-recurring difference is immaterial.",
+    "share_count": 1250081601,
+    "ttm_revenue": 170152009062.43,
+    "ttm_core_attributable_profit": 81367067677.44,
+    "ttm_eps_current_share_count": 65.089405,
+    "ttm_diluted_eps": 65.05,
+    "pe_ttm": 19.313742,
+    "pb": 6.254647,
+    "roe_ttm_percent": 32.816486,
+    "roa_ttm_percent": 26.552121,
+    "pr_ttm": 0.588538,
+    "roe_average_equity_method": "two-point TTM average: (FY2025 ending equity + 2026 H1 ending equity) / 2",
+    "stable_three_year_status": "strict_stable",
+    "strict_stable_roe_percent": [34.2, 36.03, 32.52],
+    "strict_stable_roe_cv_percent": 5.13,
+    "extreme_roe_review_required": false,
+    "roe_reliability": "not_triggered",
+    "pr_roe_role": "primary_path",
+    "dividend_payout_adjustment": {
+      "ordinary_dividend_payout_percent_FY2023_to_FY2025": [84.0, 75.0, 79.0],
+      "three_year_average_percent": 79.3,
+      "formula": "N = clamp(50 / three-year ordinary cash-dividend payout %, 1, 2)",
+      "N": 1.0,
+      "adjusted_pr_ttm": 0.588538,
+      "note": "N remains 1 because the three-year ordinary cash payout is above 50%; repurchases do not enter N."
+    },
+    "neutral_pr": 0.563905,
+    "bear_pr": 0.583496,
+    "decision_roe_percent": 32.816486,
+    "decision_roe_basis": "ttm",
+    "decision_roe_candidates": {
+      "historical_three_year_average": 34.25,
+      "roe_ttm": 32.816486,
+      "pessimistic_anchor": 33.1
+    },
+    "decision_pr": 0.588538,
+    "decision_pr_policy_version": "single-decision-pr-v2",
+    "normalized_position": 0.588538,
+    "effective_high_pr": 1.0,
+    "calculation_basis_id": "2026-06-30|core-ttm-eps=65.089405|decision-roe=32.816486|price-date=2026-09-18|single-decision-pr-v2",
+    "dupont_ttm": {
+      "net_margin_percent": 47.820222,
+      "asset_turnover": 0.555249,
+      "equity_multiplier": 1.235927,
+      "roa_percent": 26.552121,
+      "roe_percent": 32.816486,
+      "roe_driver": "very high net margin with moderate turnover and low leverage"
+    },
+    "roa_adjustment": {
+      "status": "not_required",
+      "original_roa_percent": 26.552121,
+      "corrected_roa_percent": 26.552121,
+      "formula": "TTM core attributable profit / average total assets = 81.3671 / ((303.8348 + 309.0508) / 2)",
+      "reason": "No period mismatch, material acquisition/disposal, financing event or identified non-recurring profit item requires a numerical ROA correction. Consolidated finance-subsidiary assets mean ROA is used only as a quality/leverage check.",
+      "decision_use": "quality_and_leverage_check_only; not a PR input"
+    },
+    "price_bands": {
+      "basis": "single-decision-pr-v2; target PE = normalized target × E × decision ROE; price = target PE × core TTM EPS",
+      "E": 1.0,
+      "buy_0_30": 640.80,
+      "buy_0_40": 854.40,
+      "buy_0_50": 1068.00,
+      "sell_0_80": 1708.80,
+      "sell_0_90": 1922.40,
+      "sell_1_00": 2136.01
+    },
+    "source_fingerprints": ["SSE:600519_20260417_9QS4:2025-annual", "CNINFO:1225475868:2026-h1"]
+  },
+  "exit_handoff": {
+    "fundamental_status": "intact_with_watch_items",
+    "valuation_status": "near_fair_above_entry_band",
+    "valuation_exit_stage": "below_start",
+    "add_permission": "not_allowed_current_price_above_initial_band",
+    "evidence_cutoff": "2026-09-21",
+    "historical_peak_pr_samples": [
+      {"peak_date": "2015-05-29", "close_cny": 263.83, "post_peak_12m_drawdown_percent": 27.9, "report_date": "2014-12-31", "report_available_date": "2015-04-21", "eps": 12.22, "roe_percent": 31.96, "pr": 0.6755},
+      {"peak_date": "2018-01-31", "close_cny": 764.54, "post_peak_12m_drawdown_percent": 28.2, "report_date": "2016-12-31", "report_available_date": "2017-04-15", "eps": 13.31, "roe_percent": 24.44, "pr": 2.3503},
+      {"peak_date": "2021-05-31", "close_cny": 2218.0, "post_peak_12m_drawdown_percent": 29.8, "report_date": "2020-12-31", "report_available_date": "2021-03-31", "eps": 37.17, "roe_percent": 31.41, "pr": 1.8998}
+    ],
+    "historical_peak_pr_average": 1.6419,
+    "historical_peak_pr_median": 1.8998,
+    "historical_peak_pr_cv_percent": 52.78,
+    "historical_h": 1.6419,
+    "historical_s": 1.3135,
+    "historical_m": null,
+    "exit_policy_version": "historical-h-uncapped-v2",
+    "historical_peak_pr_sample_count": 3,
+    "early_exit_multiplier": 0.8,
+    "market_risk_review_pr": 1.0,
+    "market_risk_review_e": 1.0,
+    "threshold_prices": {"S": 2805.69, "H": 3507.11, "M": null, "E": 2136.01},
+    "anchor_note": "H=min(mean, median); high dispersion uses S=0.80*H. Since H>E, M is not applicable and E is the first formal market-risk review line.",
+    "pressure_scenarios_status": "unpriced_no_source_backed_thesis_break_earnings_case",
+    "reprice_trigger": "new periodic report, profit warning, material change in ordinary cash payout or shares, price movement of 8% from the valuation base"
+  },
+  "peer_timing": {
+    "universe": ["000858", "000568", "600809", "002304", "000596", "000799", "600702"],
+    "universe_checked_at": "2026-09-09",
+    "last_price_date": "2026-09-08",
+    "status": "bottoming_candidate",
+    "confidence": "medium",
+    "target_structural_role": "ultra-premium baijiu category leader",
+    "structural_weak_group": ["000858", "000568", "002304", "000799", "600702"],
+    "weak_peers_stopped_new_lows_count": 3,
+    "weak_peer_count": 5,
+    "threshold": "ceil(5 * 40%) = 2; observed 3",
+    "counterevidence": "Wuliangye and Luzhou Laojiao made a new 20-day low during the last five sessions; the signal changes timing only, not value or position cap."
+  },
+  "price_snapshot": {
+    "price": 1257.12,
+    "price_date": "2026-09-18"
+  },
+  "position_handoff": {
+    "status": "waiting_above_initial_entry_band",
+    "recommended_percent": 0.0,
+    "conditional_ladder_cumulative_percent": [4.0, 10.0, 17.0, 25.0],
+    "single_stock_hard_cap_percent": 35.0,
+    "portfolio_policy": "5-8 holdings; conditional ladder assumes no current holding and does not override portfolio correlation or user risk budget."
+  },
+  "invalidation_triggers": [
+    "new_periodic_report_or_profit_warning",
+    "two comparable reporting periods of volume/revenue weakness with margin compression",
+    "material channel-price or inventory deterioration",
+    "audit qualification or material governance event",
+    "ordinary cash-dividend payout changes enough to alter N",
+    "price moves 8 percent from 2026-09-08 or crosses a decision-PR boundary"
+  ],
+  "run_metadata": {
+    "mode": "earnings_update_completed",
+    "official_change_check_at": "2026-09-21",
+    "next_mode_if_no_new_filing": "quick_refresh"
+  },
+  "updated_at": "2026-09-21"
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.2",
+  "company_identity": {
+    "legal_name": "宜宾五粮液股份有限公司",
+    "security": "SZSE:000858",
+    "market": "SZSE",
+    "currency": "CNY",
+    "share_class": "A股",
+    "identity_checked_at": "2026-09-09"
+  },
+  "research_handoff": {
+    "status": "fail",
+    "score": 49.0,
+    "raw_score_before_current_deterioration_cap": 62.0,
+    "score_after_current_deterioration_cap": 49.0,
+    "evidence_coverage_percent": 92.0,
+    "confidence": "medium",
+    "evidence_cutoff": "2026-08-29",
+    "business_model_class": "industry_company",
+    "technology_gate_status": "not_applicable",
+    "quality_dimensions": {
+      "moat_and_customer_value": 15.5,
+      "growth_quality_and_reinvestment": 7.0,
+      "unit_economics_cash_and_resilience": 10.0,
+      "management_governance_and_minority_fairness": 5.0,
+      "capital_allocation_and_shareholder_return": 14.0,
+      "earnings_quality_and_disclosure": 4.5,
+      "risk_resilience": 6.0
+    },
+    "minimum_dimension_pass": true,
+    "current_deterioration_gate": {
+      "trigger_count": 2,
+      "score_cap": 49.0,
+      "status": "fail",
+      "rule": "原评分卡：命中两项当前经营恶化触发，最终分最高49，且不得进入下一轮尽调。"
+    },
+    "veto_flags": [],
+    "material_blemishes": [
+      "2026-04-30 disclosed a major correction to 2025 Q1/H1/Q3 revenue-recognition accounting. It is incorporated in the audited FY2025 statements; it is a disclosure/earnings-quality penalty, not an automatic audit veto.",
+      "The 2026 H1 report says the former chairman 曾从钦 was removed after being investigated for suspected serious discipline/legal violations; as of the report, the company did not know the outcome. This remains a governance-risk monitor, not a finding against the company."
+    ],
+    "operating_deterioration_triggers": [
+      "FY2025 attributable net profit was down 71.89% year on year on the audited, post-correction basis (trigger 1).",
+      "TTM operating cash flow was negative CNY3.584 billion: FY2025 CNY29.706bn minus restated 2025H1 CNY31.137bn plus 2026H1 negative CNY2.154bn. The disclosed collection-policy and bill-maturity explanation is not yet verified as a one-off, non-repeating working-capital movement (trigger 2)."
+    ],
+    "shareholder_cap_table": {
+      "ultimate_controller": "宜宾市国有资产监督管理委员会（经宜发展集团及五粮液集团）",
+      "ownership_clarity_score": 1.0,
+      "interest_alignment_score": 0.5,
+      "decision_deadlock_score": 0.75,
+      "corporate_autonomy_score": 0.5,
+      "minority_rights_score": 0.5,
+      "total_score": 3.25,
+      "status": "conditional"
+    },
+    "eligible_next_step": "remediation_only",
+    "source_fingerprints": [
+      "CNINFO:2026-04-30:1225273122",
+      "SZSE:2026-04-30:7b179575-3e07-4607-8d7e-d1bb9c4c8786",
+      "2026-H1-report:published-2026-08-29"
+    ]
+  },
+  "pure_cash_coverage": {
+    "report_period_end": "2026-06-30",
+    "price_date": "2026-09-08",
+    "free_cash_and_equivalents_cny_m": 118819.09,
+    "excluded_restricted_cash_cny_m": 269.78,
+    "verified_interest_bearing_debt_cny_m": 0.0,
+    "strict_short_term_financial_assets_cny_m": 0.0,
+    "definite_lower_bound_net_financial_assets_cny_m": 118819.09,
+    "strict_net_financial_assets_cny_m": 118819.09,
+    "market_cap_cny_m": 278117.21,
+    "definite_lower_bound_coverage_percent": 42.72,
+    "strict_coverage_percent": 42.72,
+    "strict_net_financial_assets_per_share_cny": 30.61,
+    "availability_rating": "B",
+    "availability_note": "约453.62亿元存放于关联财务公司；该余额不改变资产公式，但提高了治理和资金可及性复核重要性。"
+  },
+  "forecast_handoff": {
+    "status": "not_run_current_deterioration_gate_failed",
+    "base_eps": null,
+    "bear_eps": null,
+    "neutral_roe_percent": null,
+    "bear_roe_percent": null,
+    "neutral_roa_percent": null,
+    "bear_roa_percent": null
+  },
+  "valuation_handoff": {
+    "status": "non_actionable_current_deterioration_gate_failed",
+    "calculated_at": "2026-09-09",
+    "ttm_period_end": "2026-06-30",
+    "accounting_basis": "post-correction statutory and adjusted core TTM",
+    "pe_ttm": 21.9208,
+    "roe_ttm_percent": 10.6432,
+    "roa_ttm_percent": 6.7669,
+    "pr_ttm": 2.0596,
+    "statutory_pe_ttm": 21.2573,
+    "statutory_roe_ttm_percent": 10.9754,
+    "statutory_roa_ttm_percent": 6.9781,
+    "statutory_pr_ttm": 1.9368,
+    "roe_average_equity_method": "two_point_average: 2025-12-31 and 2026-06-30 attributable equity",
+    "roa_adjustment": {
+      "raw_roa_percent": 6.9781,
+      "corrected_roa_percent": 6.7669,
+      "formula": "TTM扣非归母净利润126.8737亿元 / 平均总资产1,874.9182亿元",
+      "reason": "利润分子以扣非口径与ROE/PE调整口径一致；资产分母使用期初期末平均。会计差错更正已进入2025年审计数，未另行重复调整资产。",
+      "decision_use": "资产效率与杠杆交叉核验，不代入PR公式"
+    },
+    "dupont": {
+      "core_net_margin_percent": 27.9241,
+      "asset_turnover": 0.2423,
+      "equity_multiplier": 1.5728,
+      "roe_percent": 10.6432,
+      "roe_reliability": "usable_with_caution",
+      "extreme_roe_review_required": false,
+      "leverage_review_required": false
+    },
+    "payout_adjustment": {
+      "three_year_ordinary_cash_payout_percent": 80.5884,
+      "years": {"2023": 60.0025, "2024": 70.0082, "2025": 111.7545},
+      "coefficient_n": 1.0,
+      "adjusted_pr_ttm": 2.0596,
+      "formula": "N=clamp(50/D,1,2)"
+    },
+    "three_year_roe": {"2023": 25.06, "2024": 23.35, "2025": 6.89, "mean_percent": 18.4333, "cv_percent": 44.4, "status": "unstable", "reason": "2025 post-correction earnings reset makes the three-year stable-company PR ladder unavailable"},
+    "price_bands": null,
+    "reason": "The prior accounting-veto rationale was withdrawn, but the original current-deterioration gate independently fails: audited FY2025 attributable profit fell 71.89% and TTM operating cash flow is negative. Current PR is diagnostic only; no price bands or action may be generated."
+  },
+  "exit_handoff": {
+    "fundamental_status": "weakened_current_deterioration_gate",
+    "valuation_status": "non_actionable",
+    "add_permission": "not_allowed",
+    "valuation_exit_stage": "not_applicable",
+    "exit_anchors": null,
+    "fundamental_exit_triggers": [
+      "监管或公司披露表明收入确认差错范围扩大、产生处罚或审计意见变化",
+      "原董事长调查出现涉及公司的不利结论",
+      "库存、合同负债、经销商回款与终端动销继续背离"
+    ]
+  },
+  "peer_timing": {
+    "status": "not_run_upstream_gate_failed",
+    "reason": "Peer timing cannot override the current-deterioration gate."
+  },
+  "position_handoff": {
+    "status": "non_executable",
+    "assumed_current_position_percent": 0.0,
+    "recommended_percent_now": 0.0,
+    "valuation_supported_cumulative_percent": 0.0,
+    "constraint": "research_handoff.status=fail because the original current-deterioration gate has two triggers; accounting correction alone is not the reason."
+  },
+  "price_snapshot": {
+    "price": 71.65,
+    "price_date": "2026-09-08",
+    "currency": "CNY",
+    "source": "Investing.com historical prices"
+  },
+  "invalidation_triggers": [
+    "有关前期会计差错、收入确认或监管调查的新正式披露",
+    "审计意见、处罚、控制权或高管治理变化",
+    "2026年第三季度报告"
+  ],
+  "run_metadata": {
+    "mode": "full_rebuild",
+    "official_change_check_at": "2026-09-09",
+    "stopped_at": "background_research_current_deterioration_gate",
+    "refreshed_modules": ["company identity", "latest H1 financials", "governance and accounting-risk review", "cash coverage", "price", "research handoff", "TTM diagnostic snapshot", "payout adjustment", "current-deterioration gate"],
+    "not_run_modules": ["three-year forecast", "actionable valuation", "industry timing", "historical exit anchors", "position sizing"],
+    "revision_note": "On 2026-09-09, the prior treatment of the accounting correction as an automatic research failure was withdrawn. It remains a material quality blemish. The original scorecard nevertheless caps the final score at 49 because two independent current-deterioration triggers are present: FY2025 profit decline greater than 50% and negative TTM operating cash flow not yet verified as a one-off working-capital item.",
+    "validation_note": "JSON syntax checked locally after revision."
+  },
+  "updated_at": "2026-09-09"
+}

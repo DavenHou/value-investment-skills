@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.2",
+  "company_identity": {
+    "legal_name": "中远海运控股股份有限公司",
+    "security": "601919",
+    "market": "SSE",
+    "currency": "CNY",
+    "share_class": "A",
+    "identity_checked_at": "2026-09-12"
+  },
+  "research_handoff": {
+    "status": "pass_with_cycle_caution",
+    "score": 70.0,
+    "evidence_coverage_percent": 84.0,
+    "confidence": "medium",
+    "evidence_cutoff": "2026-08-29",
+    "quality_scorecard": {
+      "moat_20": 13.0,
+      "growth_15": 7.0,
+      "financial_resilience_15": 13.0,
+      "governance_10": 6.0,
+      "capital_allocation_20": 15.0,
+      "earnings_quality_10": 9.0,
+      "risk_10": 7.0
+    },
+    "source_fingerprints": [
+      "CNINFO:1225019947:2025-annual",
+      "COSCO:601919_20260829_TT34:2026-h1"
+    ]
+  },
+  "forecast_handoff": {
+    "status": "usable_medium_confidence",
+    "latest_filing_id": "COSCO:601919_20260829_TT34:2026-h1",
+    "evidence_cutoff": "2026-08-29",
+    "accounting_basis": "Attributable net profit; FY2026-FY2028 are analyst-range-informed scenario assumptions, not company guidance.",
+    "forecast_years": ["2026", "2027", "2028"],
+    "base_eps_path": [2.25, 1.75, 1.75],
+    "bear_eps_path": [1.10, 0.50, 0.50],
+    "base_roe_percent_path": [14.26, 10.43, 9.92],
+    "bear_roe_percent_path": [7.06, 3.13, 3.08],
+    "scenario_assumptions": {
+      "base": "Uses the current post-H1 broker range and assumes a roughly 50% ordinary cash payout; demand growth remains modest while the fleet-delivery overhang prevents a return to pandemic margins.",
+      "bear": "Assumes freight-rate normalization, delivery pressure and weaker demand; it is a stress path, not a broker consensus. It remains positive in the forecast only because the historical 2016 loss already supplies the lower-tail economic evidence.",
+      "capital": "Forecast ROE uses a mechanical equity path from 2025 ending equity plus scenario profit less a 50% payout. It must be refreshed after FY2026 results."
+    },
+    "source_fingerprints": [
+      "STOCKSTAR:601919:2026-09-01-consensus-range",
+      "10JQKA:601919:Founder-2026-08-31"
+    ]
+  },
+  "valuation_handoff": {
+    "status": "conditional_non_actionable",
+    "calculated_at": "2026-09-12",
+    "valuation_model_version": "cyclical-pb-pr-v1",
+    "company_type": "cyclical_container_shipping_leader",
+    "ttm_period_end": "2026-06-30",
+    "accounting_basis": "TTM attributable profit = FY2025 - H1FY2025 + H1FY2026; ROE uses the disclosed FY2025 and 2026H1 ending equity two-point average.",
+    "share_count": 15268122965,
+    "ttm_revenue_cny": 222326208484.0,
+    "ttm_attributable_profit_cny": 26750976358.0,
+    "ttm_eps": 1.75,
+    "book_value_per_share_cny": 15.31,
+    "pe_ttm": 9.25,
+    "pb_current": 1.058,
+    "roe_ttm_percent": 11.48,
+    "roa_ttm_percent": 5.53,
+    "pr_ttm_verification": 0.805,
+    "decision_pr": 0.805,
+    "execution_pr": 0.805,
+    "execution_pr_basis": "Current weak run-rate path: PE_TTM/ROE_TTM = 0.805; same-date PB cross-check is about 0.803. The small difference is two-point average equity and display rounding. This deliberately conservative path, not the neutral normalized path, is the only PR used for conditional price mapping.",
+    "neutral_normalized_roe_percent": 20.654,
+    "neutral_pr_diagnostic": 0.248,
+    "bear_normalized_roe_percent": -0.854,
+    "bear_pr": null,
+    "cycle_anchor_conflict": "insufficient",
+    "cycle_anchor_note": "Complete-cycle phase-balanced neutral ROE is usable as a diagnostic, but the 10-year lower-tail blended bear ROE is negative. A PB/ROE-squared bear PR would have no economic meaning; therefore it cannot be used to unlock a position.",
+    "cycle_fundamental_signal": "mixed",
+    "dupont_ttm": {
+      "net_margin_percent": 12.03,
+      "asset_turnover": 0.460,
+      "equity_multiplier": 2.076,
+      "roe_percent": 11.48,
+      "change_vs_fy2025": "The TTM ROE decline is mainly margin-led: net margin about 12.03% versus FY2025 about 14.06%; turnover is slightly better and leverage is broadly stable."
+    },
+    "cash_coverage": {
+      "free_cash_lower_bound_cny": 140837137657.52,
+      "strict_net_financial_assets_cny": 100312762079.96,
+      "strict_net_financial_assets_per_share_cny": 6.57,
+      "strict_coverage_percent_of_price": 40.6,
+      "lease_liabilities_excluded_from_formula": true
+    },
+    "price_bands": {
+      "basis": "Conditional map from execution_PR=decision_PR=0.805 and price CNY16.19. Price alone never unlocks a tier while cycle_anchor_conflict is insufficient.",
+      "information_watch": {"execution_pr_at_or_below": 0.55, "price_cny_at_or_below": 11.06, "conditional_cumulative_percent": 4.0},
+      "main": {"execution_pr_at_or_below": 0.50, "price_cny_at_or_below": 10.06, "conditional_cumulative_percent": 10.0},
+      "deep": {"execution_pr_at_or_below": 0.40, "price_cny_at_or_below": 8.05, "conditional_cumulative_percent": 20.0},
+      "extreme": {"execution_pr_at_or_below": 0.30, "price_cny_at_or_below": 6.03, "conditional_cumulative_percent": 35.0}
+    },
+    "source_fingerprints": [
+      "CNINFO:1225019947:2025-annual",
+      "COSCO:601919_20260829_TT34:2026-h1",
+      "SOHU-HQ:601919:2026-09-11"
+    ]
+  },
+  "exit_handoff": {
+    "fundamental_status": "intact_with_cycle_watch",
+    "valuation_status": "unpriceable_for_bear_exit_anchor",
+    "valuation_exit_stage": "not_applicable_no_current_holding_assumed",
+    "add_permission": "paused_cycle_anchor_insufficient",
+    "market_risk_review_e": 1.0,
+    "historical_peak_pr_samples_status": "insufficient",
+    "historical_h": null,
+    "historical_s": null,
+    "historical_m": null,
+    "historical_anchor_note": "No S/H/M threshold is emitted. The required adjusted monthly peak series and peak-date public financial inputs were not retrievable in this run; current financials are not backfilled into history.",
+    "reprice_trigger": "new periodic report, profit warning, CCFI/freight-rate regime change, material fleet-delivery update, dividend/share-count change, or an 8% price move"
+  },
+  "peer_timing": {
+    "universe": ["603565", "601022", "601083"],
+    "status": "partial",
+    "confidence": "low",
+    "note": "Peer 20-day returns were not reported because the public day-line endpoint was unavailable; this does not change the independent mixed industry-supply conclusion."
+  },
+  "price_snapshot": {
+    "price": 16.19,
+    "price_date": "2026-09-11"
+  },
+  "position_handoff": {
+    "status": "paused_cycle_anchor_insufficient",
+    "current_weight_assumed_percent": 0.0,
+    "recommended_new_percent": 0.0,
+    "conditional_ladder_cumulative_percent": [4.0, 10.0, 20.0, 35.0],
+    "single_stock_hard_cap_percent": 35.0,
+    "kelly_status": "not_usable_no_auditable_same_strategy_sample",
+    "portfolio_constraints": "unverified: portfolio value, existing shipping exposure, correlation and chosen risk budget were not provided."
+  },
+  "invalidation_triggers": [
+    "FY2026 results or a profit warning",
+    "two comparable reports with volume/revenue weakness plus further shipping-margin compression",
+    "CCFI/freight rates, orderbook deliveries or effective capacity materially deviate from the stated mixed-cycle case",
+    "audit qualification, material governance event, debt/cash deterioration or ordinary payout change",
+    "price moves 8 percent from 2026-09-11 or crosses a conditional execution-PR boundary"
+  ],
+  "run_metadata": {
+    "mode": "full_rebuild_with_exit_history_handoff",
+    "official_change_check_at": "2026-09-12",
+    "next_mode_if_no_new_filing": "quick_refresh"
+  },
+  "updated_at": "2026-09-12"
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.4",
+  "company_identity": {
+    "legal_name": "PDD Holdings Inc.",
+    "security": "PDD",
+    "market": "NASDAQ",
+    "currency": "USD",
+    "share_class": "ADS (4 ordinary shares per ADS)",
+    "identity_checked_at": "2026-09-21"
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "SEC:0001104659-26-100534:2026Q2-6K",
+    "evidence_cutoff": "2026-08-24",
+    "accounting_basis": "GAAP diluted ADS EPS. FY2026-FY2028 scenarios assume no dividend or repurchase and therefore retain all forecast profit in equity; they are model assumptions, not company guidance.",
+    "forecast_years": ["2026", "2027", "2028"],
+    "base_eps": 10.198709,
+    "bear_eps": 8.158967,
+    "bull_eps": 11.21858,
+    "base_eps_path": [10.198709, 11.728515, 13.135937],
+    "bear_eps_path": [8.158967, 8.796386, 9.195156],
+    "bull_eps_path": [11.21858, 13.487792, 15.107327],
+    "base_roe_path_percent": [21.74836, 20.271291, 18.688205],
+    "bear_roe_path_percent": [17.785494, 16.184121, 14.515368],
+    "neutral_roe_percent": 26.720954,
+    "bear_roe_percent": 24.699879,
+    "neutral_roa_percent": 16.560432,
+    "bear_roa_percent": 15.042267,
+    "scenario_assumptions": {
+      "base": "Q2 2026 ecosystem investment remains elevated, followed by moderate earnings recovery; all profit is retained.",
+      "bear": "FY2026-FY2028 diluted ADS EPS uses the prior post-Q2 consensus path discounted by about 20%, with no shareholder distribution.",
+      "bull": "Base EPS plus a 10%-15% operating recovery sensitivity; all profit is retained.",
+      "capital": "No dividend, no net buyback and no cash distribution credit. Retained cash increases the equity denominator and therefore lowers forecast ROE over time."
+    },
+    "source_fingerprints": [
+      "SEC:0001104659-26-050727:2025-20F",
+      "SEC:0001104659-26-100534:2026Q2-6K",
+      "SEC:0001104659-25-082955:2025Q2-6K"
+    ]
+  },
+  "cash_safety_handoff": {
+    "status": "usable_safety_only",
+    "period_end": "2026-06-30",
+    "cash_and_equivalents_rmb_bn": 128.918,
+    "short_term_investments_rmb_bn": 327.496,
+    "restricted_cash_rmb_bn": 77.274,
+    "total_debt_rmb_bn": 4.844,
+    "cash_only_net_of_debt_market_cap_coverage_percent": 16.69,
+    "strict_net_financial_asset_market_cap_coverage_percent": 60.73,
+    "valuation_credit": 0.0,
+    "policy": "safety_only_no_cash_addback_no_net_cash_floor_no_action_unlock",
+    "user_override_reason": "User does not expect the balance-sheet cash to be returned to shareholders.",
+    "source_fingerprints": [
+      "SEC:0001104659-26-100534:2026Q2-6K",
+      "StockAnalysis:PDD-balance-sheet:checked-2026-09-21"
+    ]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-09-21",
+    "valuation_model_version": "ttm-pr-cutoff-locked-v5",
+    "company_type": "technology",
+    "cycle_anchor_policy_version": null,
+    "cycle_anchor_conflict_status": "not_applicable",
+    "market_pr_policy_version": "us-pr-1.00-exit-review-v1",
+    "ttm_period_end": "2026-06-30",
+    "accounting_basis": "TTM GAAP net income = FY2025 - H1 2025 + H1 2026; diluted ADS EPS translated at USD/CNY 6.6977. Cash and short-term investments receive zero target-price credit.",
+    "ttm_revenue_rmb_bn": 450.7759,
+    "ttm_attributable_net_income_rmb_bn": 92.075539,
+    "ttm_diluted_eps_cny_per_ads": 62.21,
+    "ttm_diluted_eps": 9.288263,
+    "pe_ttm": 8.494591,
+    "pb": 1.660448,
+    "roe_ttm_percent": 22.553156,
+    "roa_ttm_percent": 14.964779,
+    "pr_ttm": 0.376648,
+    "roe_average_equity_method": "five-quarter time-weighted average equity: (E0/2 + E1 + E2 + E3 + E4/2) / 4",
+    "historical_five_year_roe_percent": [11.484433, 32.701337, 39.360053, 44.923963, 26.927968],
+    "historical_five_year_recent_weighted_roe_percent": 32.7487,
+    "pessimistic_anchor_roe_percent": 25.485347,
+    "neutral_roe_percent": 26.720954,
+    "bear_roe_percent": 24.699879,
+    "decision_roe_percent": 22.553156,
+    "decision_roe_basis": "current_ttm_min_of_historical_ttm_and_mixed_bear",
+    "decision_roe_candidates": {
+      "historical_five_year_recent_weighted": 32.7487,
+      "roe_ttm": 22.553156,
+      "pessimistic_anchor": 25.485347
+    },
+    "decision_pr": 0.376648,
+    "decision_pr_policy_version": "single-decision-pr-v2",
+    "normalized_position": 0.376648,
+    "effective_high_pr": 1.0,
+    "calculation_basis_id": "2026-06-30|gaap-ttm-eps-usd=9.288263|decision-roe=22.553156|cash-credit=0|price-date=2026-09-18|single-decision-pr-v2",
+    "extreme_roe_review_required": true,
+    "roe_reliability": "organic_high_return",
+    "extreme_roe_review": {
+      "trigger": "FY2024 ROE exceeded 40%",
+      "resolution": "Equity expanded rather than contracted, debt remained small, and the TTM equity multiplier was about 1.51; high ROE was not caused by debt-funded repurchases or a shrinking equity denominator.",
+      "pr_roe_role": "usable_after_dupont_and_roa_review"
+    },
+    "dupont_leverage_review_required": false,
+    "dupont_ttm": {
+      "net_margin_percent": 20.426012,
+      "asset_turnover": 0.732633,
+      "equity_multiplier": 1.507082,
+      "roa_percent": 14.964779,
+      "roe_percent": 22.553156,
+      "roe_driver": "high operating margin with low financial leverage; retained cash depresses asset turnover and ROE"
+    },
+    "pb_ceiling_breach": false,
+    "cash_valuation_policy": "zero_addback_keep_reported_equity_denominator",
+    "price_bands": {
+      "basis": "single-decision-pr-v2; E=1.0 market fallback; no cash addback or net-cash floor",
+      "E": 1.0,
+      "buy_0_30": 62.84,
+      "buy_0_40": 83.79,
+      "buy_0_50": 104.74,
+      "sell_0_80": 167.58,
+      "sell_0_90": 188.53,
+      "sell_1_00": 209.48
+    },
+    "source_fingerprints": [
+      "SEC:0001104659-26-050727:2025-20F",
+      "SEC:0001104659-26-100534:2026Q2-6K",
+      "StockAnalysis:PDD-history:2026-09-18-close",
+      "Investing:USDCNY:2026-09-18"
+    ]
+  },
+  "exit_handoff": {
+    "exit_policy_version": "historical-h-uncapped-v2",
+    "fundamental_status": "weakened_pending_confirmation",
+    "valuation_status": "main_buy_band_but_not_a_trade_authorization",
+    "valuation_exit_stage": "below_start",
+    "add_permission": "valuation_only_quality_and_position_not_run",
+    "evidence_cutoff": "2026-09-21",
+    "historical_peak_pr_sample_count": 0,
+    "historical_peak_pr_average": null,
+    "historical_peak_pr_median": null,
+    "historical_h": null,
+    "historical_s": null,
+    "historical_m": null,
+    "early_exit_multiplier": 0.85,
+    "market_risk_review_pr": 1.0,
+    "threshold_prices": {
+      "S": null,
+      "H": null,
+      "M": null,
+      "E": 209.48
+    },
+    "anchor_note": "Legacy PDD peak samples are not reusable under the current technology five-year positive-comparable-history rule; E falls back to the US market line and exit bands are therefore wide.",
+    "pressure_scenarios_status": "modeled_no_cash_return_and_profit_reinvestment",
+    "reprice_trigger": "new periodic report, profit warning, material capital-return announcement, or price movement of 8% from the valuation base"
+  },
+  "price_snapshot": {
+    "price": 78.9,
+    "price_date": "2026-09-18",
+    "fx_rate": 6.6977,
+    "fx_pair": "USD/CNY",
+    "fx_date": "2026-09-18"
+  },
+  "invalidation_triggers": [
+    "new_periodic_report_or_profit_warning",
+    "material_change_in_share_count_or_ads_ratio",
+    "material_dividend_or_net_buyback_program",
+    "two_reporting_periods_of_operating_profit_or_unit_economics_deterioration",
+    "audit_or_vie_governance_event",
+    "price_moves_8_percent_from_2026-09-18_or_crosses_a_decision_pr_boundary"
+  ],
+  "run_metadata": {
+    "scope": "quick_valuation",
+    "mode": "full_rebuild_completed",
+    "official_change_check_at": "2026-09-21",
+    "latest_official_filing_checked": "SEC:0001104659-26-100534:2026Q2-6K",
+    "next_mode_if_no_new_filing": "quick_refresh"
+  },
+  "updated_at": "2026-09-21"
+}

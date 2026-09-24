@@ -1,0 +1,42 @@
+{
+  "NASDAQ:PDD": {
+    "name": "PDD",
+    "earnings_per_share_forecast_next_fy": 10.294782303199998,
+    "revenue_forecast_next_fy": 69604379662.24507
+  },
+  "NASDAQ:ADBE": {
+    "name": "ADBE",
+    "earnings_per_share_forecast_next_fy": 24.40247,
+    "revenue_forecast_next_fy": 26524309379
+  },
+  "NASDAQ:CHKP": {
+    "name": "CHKP",
+    "earnings_per_share_forecast_next_fy": 10.443949,
+    "revenue_forecast_next_fy": 2801847314
+  },
+  "NASDAQ:GOOGL": {
+    "name": "GOOGL",
+    "earnings_per_share_forecast_next_fy": 20.569198,
+    "revenue_forecast_next_fy": 497660225963
+  },
+  "NASDAQ:LULU": {
+    "name": "LULU",
+    "earnings_per_share_forecast_next_fy": 10.844788,
+    "revenue_forecast_next_fy": 11025596326
+  },
+  "NASDAQ:META": {
+    "name": "META",
+    "earnings_per_share_forecast_next_fy": 31.398633,
+    "revenue_forecast_next_fy": 254122887348
+  },
+  "NASDAQ:MSFT": {
+    "name": "MSFT",
+    "earnings_per_share_forecast_next_fy": 19.723885,
+    "revenue_forecast_next_fy": 390636922968
+  },
+  "NYSE:DECK": {
+    "name": "DECK",
+    "earnings_per_share_forecast_next_fy": 7.534283,
+    "revenue_forecast_next_fy": 5886966705
+  }
+}

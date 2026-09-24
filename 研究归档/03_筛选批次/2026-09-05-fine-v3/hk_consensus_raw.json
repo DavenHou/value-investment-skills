@@ -1,0 +1,82 @@
+{
+  "HKEX:2020": {
+    "name": "2020",
+    "earnings_per_share_forecast_next_fy": 6.371839921261077,
+    "revenue_forecast_next_fy": 102848598100.30649
+  },
+  "HKEX:9980": {
+    "name": "9980",
+    "earnings_per_share_forecast_next_fy": 8.339015,
+    "revenue_forecast_next_fy": 28088431523
+  },
+  "HKEX:1882": {
+    "name": "1882",
+    "earnings_per_share_forecast_next_fy": 2.3987187696651238,
+    "revenue_forecast_next_fy": 21450293585.84048
+  },
+  "HKEX:6690": {
+    "name": "6690",
+    "earnings_per_share_forecast_next_fy": 2.392923,
+    "revenue_forecast_next_fy": 356084150576
+  },
+  "HKEX:151": {
+    "name": "151",
+    "earnings_per_share_forecast_next_fy": 0.34525335989334166,
+    "revenue_forecast_next_fy": 27682517095.1712
+  },
+  "HKEX:322": {
+    "name": "322",
+    "earnings_per_share_forecast_next_fy": 0.9364612889969414,
+    "revenue_forecast_next_fy": 93702481970.85342
+  },
+  "HKEX:9961": {
+    "name": "9961",
+    "earnings_per_share_forecast_next_fy": 27.304938,
+    "revenue_forecast_next_fy": 77884749061
+  },
+  "HKEX:3998": {
+    "name": "3998",
+    "earnings_per_share_forecast_next_fy": 0.4342060001568504,
+    "revenue_forecast_next_fy": 34025741735.51251
+  },
+  "HKEX:700": {
+    "name": "700",
+    "earnings_per_share_forecast_next_fy": 33.82613887632342,
+    "revenue_forecast_next_fy": 963112766468.9225
+  },
+  "HKEX:2589": {
+    "name": "2589",
+    "earnings_per_share_forecast_next_fy": 6.827083366010509,
+    "revenue_forecast_next_fy": 6241446710.0619545
+  },
+  "HKEX:1024": {
+    "name": "1024",
+    "earnings_per_share_forecast_next_fy": 2.0784906639479255,
+    "revenue_forecast_next_fy": 161694371755.38483
+  },
+  "HKEX:999": {
+    "name": "999",
+    "earnings_per_share_forecast_next_fy": 0.583062070112148,
+    "revenue_forecast_next_fy": 6478955051.933182
+  },
+  "HKEX:6110": {
+    "name": "6110",
+    "earnings_per_share_forecast_next_fy": 0.18986987530389773,
+    "revenue_forecast_next_fy": 27242827393.924553
+  },
+  "HKEX:1361": {
+    "name": "1361",
+    "earnings_per_share_forecast_next_fy": 0.7859063188769508,
+    "revenue_forecast_next_fy": 14166174663.947924
+  },
+  "HKEX:1999": {
+    "name": "1999",
+    "earnings_per_share_forecast_next_fy": 0.438138,
+    "revenue_forecast_next_fy": 16565333332.999998
+  },
+  "HKEX:1910": {
+    "name": "1910",
+    "earnings_per_share_forecast_next_fy": 1.3744098502078266,
+    "revenue_forecast_next_fy": 27625646231.668102
+  }
+}

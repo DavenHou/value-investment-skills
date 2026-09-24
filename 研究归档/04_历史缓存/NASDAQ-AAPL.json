@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.2",
+  "company_identity": {
+    "legal_name": "Apple Inc.",
+    "security": "AAPL",
+    "market": "NASDAQ",
+    "currency": "USD",
+    "share_class": "common stock",
+    "identity_checked_at": "2026-09-08"
+  },
+  "run": {
+    "mode": "full_rebuild_completed",
+    "official_change_check_at": "2026-09-08",
+    "latest_filing_id": "SEC:0000320193-26-000020:2026-06-27",
+    "latest_filing_date": "2026-07-31"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 77.5,
+    "evidence_coverage_percent": 82.0,
+    "confidence": "medium",
+    "evidence_cutoff": "2026-07-31",
+    "business_model_class": "industry_company",
+    "technology_gate_status": "not_applicable",
+    "scorecard": {
+      "moat_and_customer_value": 17.0,
+      "growth_innovation_and_runway": 11.0,
+      "unit_economics_cash_flow_and_resilience": 12.5,
+      "management_governance_and_minority_fairness": 8.0,
+      "capital_allocation_and_shareholder_returns": 15.0,
+      "earnings_quality_and_disclosure": 8.0,
+      "risk_resilience": 6.0
+    },
+    "operating_deterioration_triggers": [],
+    "reason": "Formal scorecard completed from FY2025 10-K, FY2026 Q3 10-Q, FY2026 proxy and Q3 results release. Product revenue is the majority of revenue, so the full-technology gate does not apply; regulatory and supply-chain risk constrain risk-resilience and capital-allocation scores.",
+    "source_fingerprints": [
+      "SEC:0000320193-26-000020:FY2026-Q3",
+      "SEC:0000320193-25-000079:FY2025-10K",
+      "SEC:0001308179-26-000008:FY2026-proxy",
+      "Apple:2026-07-30:FY2026-Q3-results"
+    ]
+  },
+  "reported_ttm_diagnostic": {
+    "basis": "GAAP FY2025 less first nine months FY2025 plus first nine months FY2026; diluted EPS uses the same arithmetic",
+    "net_income_usd_millions": 128930,
+    "diluted_eps_usd": 8.72,
+    "price_usd": 319.97,
+    "price_date": "2026-09-04",
+    "pe_ttm": 36.6938,
+    "revenue_usd_millions": 466823,
+    "five_quarter_weighted_average_equity_usd_millions": 88772.25,
+    "five_quarter_weighted_average_assets_usd_millions": 366750.125,
+    "roe_ttm_percent": 145.230,
+    "roa_ttm_percent": 35.153,
+    "net_margin_ttm_percent": 27.618,
+    "asset_turnover_ttm": 1.273,
+    "equity_multiplier_ttm": 4.132
+  },
+  "capital_structure_review": {
+    "extreme_roe_review_required": true,
+    "roe_reliability": "organic_high_return",
+    "pr_roe_role": "usable_with_company_history_cap",
+    "june_27_2026_shareholders_equity_usd_millions": 107520,
+    "june_27_2026_total_interest_bearing_debt_usd_millions": 84344,
+    "nine_month_common_stock_repurchases_usd_millions": 62242,
+    "strict_net_financial_assets_preliminary_usd_millions": 62173,
+    "normal_capital_structure_method": "Use the median of the five current quarterly asset-to-equity multipliers, rather than the higher five-year annual median; multiply TTM ROA by that multiplier.",
+    "five_quarter_equity_multiplier_series": [5.035, 4.873, 4.301, 3.484, 3.565],
+    "normal_equity_multiplier": 4.301,
+    "normalized_roe_percent": 151.18,
+    "conclusion": "Current TTM leverage multiplier of 4.132 is below the conservative five-quarter median. High ROE is predominantly supported by a 27.6% net margin and 1.273x asset turnover, not by a current-period leverage increase.",
+    "required_remediation": []
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "evidence_cutoff": "2026-07-31",
+    "horizon": "FY2026-FY2028, fiscal year ending September",
+    "accounting_basis": "GAAP; FY2026 contains nine months actual and a scenario-based fourth quarter",
+    "confidence": "medium",
+    "base": {
+      "fiscal_years": [
+        {"fiscal_year": 2026, "revenue_usd_millions": 479357, "net_income_usd_millions": 128464, "eps_usd": 8.78, "average_equity_usd_millions": 118000, "average_assets_usd_millions": 395000, "roe_percent": 108.9, "roa_percent": 32.5},
+        {"fiscal_year": 2027, "revenue_usd_millions": 498000, "net_income_usd_millions": 132000, "eps_usd": 9.15, "average_equity_usd_millions": 140000, "average_assets_usd_millions": 410000, "roe_percent": 94.3, "roa_percent": 32.2},
+        {"fiscal_year": 2028, "revenue_usd_millions": 517000, "net_income_usd_millions": 136000, "eps_usd": 9.55, "average_equity_usd_millions": 160000, "average_assets_usd_millions": 426000, "roe_percent": 85.0, "roa_percent": 31.9}
+      ]
+    },
+    "bear": {
+      "fiscal_years": [
+        {"fiscal_year": 2026, "revenue_usd_millions": 471357, "net_income_usd_millions": 124464, "eps_usd": 8.51, "average_equity_usd_millions": 114000, "average_assets_usd_millions": 395000, "roe_percent": 109.2, "roa_percent": 31.5},
+        {"fiscal_year": 2027, "revenue_usd_millions": 476000, "net_income_usd_millions": 121000, "eps_usd": 8.38, "average_equity_usd_millions": 130000, "average_assets_usd_millions": 408000, "roe_percent": 93.1, "roa_percent": 29.7},
+        {"fiscal_year": 2028, "revenue_usd_millions": 486000, "net_income_usd_millions": 123000, "eps_usd": 8.63, "average_equity_usd_millions": 145000, "average_assets_usd_millions": 422000, "roe_percent": 84.8, "roa_percent": 29.1}
+      ]
+    },
+    "bull": {
+      "fiscal_years": [
+        {"fiscal_year": 2026, "revenue_usd_millions": 484357, "net_income_usd_millions": 131464, "eps_usd": 8.98, "average_equity_usd_millions": 120000, "average_assets_usd_millions": 395000, "roe_percent": 109.6, "roa_percent": 33.3},
+        {"fiscal_year": 2027, "revenue_usd_millions": 512000, "net_income_usd_millions": 140000, "eps_usd": 9.70, "average_equity_usd_millions": 145000, "average_assets_usd_millions": 414000, "roe_percent": 96.6, "roa_percent": 33.8},
+        {"fiscal_year": 2028, "revenue_usd_millions": 540000, "net_income_usd_millions": 150000, "eps_usd": 10.55, "average_equity_usd_millions": 172000, "average_assets_usd_millions": 437000, "roe_percent": 87.2, "roa_percent": 34.3}
+      ]
+    },
+    "assumption_summary": "FY2026 Q4 starts from the disclosed nine-month actuals; bear assumes supply-cost, tariff and platform-regulation pressure; base assumes low-single-digit product growth and continued services mix improvement; bull assumes stronger upgrade cycle and services growth. Equity paths assume continuing dividends and net buybacks, so forecast ROE remains diagnostic-only.",
+    "balance_sheet_path_status": "usable_with_caution",
+    "eligible_next_step": "valuation_remediation_only"
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-09-08",
+    "valuation_model_version": "ttm-pr-dupont-v4",
+    "company_type": "stable",
+    "ttm_period_end": "2026-06-27",
+    "pe_ttm": 36.6938,
+    "roe_ttm_percent": 145.230,
+    "normalized_current_roe_percent": 151.18,
+    "pr_ttm_normal_capital_structure": 0.2427,
+    "three_year_stability": {
+      "historical_roe_percent": [171.950, 157.413, 171.422],
+      "status": "strict_stable",
+      "three_year_mean_percent": 166.928,
+      "comment": "Historical ROE is high but stable; it is used only with the normal-capital-structure review and not as an unreviewed current-equity input."
+    },
+    "normalized_profitability": {
+      "neutral_roe_percent": 154.226,
+      "bear_roe_percent": 142.039,
+      "neutral_roa_percent": 35.856,
+      "bear_roa_percent": 30.089,
+      "decision_weights": {"neutral": 0.55, "bear": 0.45},
+      "decision_pr": 0.247108
+    },
+    "shareholder_return_adjustment": {
+      "three_year_net_shareholder_payout_percent": 90.9,
+      "payout_adjustment_n": 1.0,
+      "basis": "FY2023-FY2025 cash dividends plus cash repurchases less stock-based compensation, divided by GAAP net income."
+    },
+    "company_pr_history": {
+      "window": "FY2021-FY2025 fiscal-year-end snapshots",
+      "samples": [0.1732, 0.1376, 0.1603, 0.2360, 0.1998],
+      "p25": 0.1603,
+      "median": 0.1732,
+      "p75": 0.1998,
+      "current_percentile": "above sampled p75",
+      "entry_cap_rule": "Company-specific approved cap: apply the lower of the framework entry PR and Apple historical p75."
+    },
+    "price_bands": {
+      "first_position": {"maximum_price_usd": 258.69, "decision_pr_cap": 0.1998, "new_position_percent": 4, "cumulative_position_percent": 4},
+      "main_add": {"maximum_price_usd": 224.34, "decision_pr_cap": 0.1732, "new_position_percent": 8, "cumulative_position_percent": 12},
+      "deep_value": {"maximum_price_usd": 207.55, "decision_pr_cap": 0.1603, "new_position_percent": 8, "cumulative_position_percent": 20}
+    },
+    "reason": "At $319.97, Apple is above its FY2021-FY2025 sampled PR p75 even after conservative normal-capital-structure ROE reconstruction; no current valuation entry is supported."
+  },
+  "position_handoff": {
+    "status": "watch_only",
+    "recommended_percent": 0,
+    "reason": "Current price is above the company-history-calibrated first-position ceiling. Peer timing is dormant until the first-position price condition is met.",
+    "stress_cases": {
+      "weakened": {"price_usd": 190.42, "loss_from_current_percent": -40.49, "basis": "FY2027 bear EPS and FY2021-FY2025 PR p25 under bear normalized ROE."},
+      "broken": {"price_usd": 144.80, "loss_from_current_percent": -54.75, "basis": "FY2023 reported diluted EPS and weak historical ROE with FY2021-FY2025 PR p25; a historical stress proxy, not a stop-loss."}
+    }
+  },
+  "invalidation_triggers": [
+    "FY2026 10-K or earnings release",
+    "material App Store or search-distribution legal remedy",
+    "material component-price, tariff, supply-chain, or capital-return change"
+  ],
+  "updated_at": "2026-09-08"
+}

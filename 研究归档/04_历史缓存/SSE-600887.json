@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "company_identity": {
+    "legal_name": "内蒙古伊利实业集团股份有限公司",
+    "security": "600887",
+    "market": "SSE",
+    "currency": "CNY",
+    "share_class": "A",
+    "identity_checked_at": "2026-08-31"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 73.8,
+    "evidence_coverage_percent": 86.0,
+    "confidence": "medium",
+    "evidence_cutoff": "2026-09-01",
+    "source_fingerprints": [
+      "600887-2026-H1",
+      "600887-2025-annual"
+    ]
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "600887-2026-H1",
+    "evidence_cutoff": "2026-08-27",
+    "base_eps": 1.75,
+    "bear_eps": 1.50,
+    "neutral_roe_percent": 18.8,
+    "bear_roe_percent": 16.5,
+    "neutral_roa_percent": 6.8,
+    "bear_roa_percent": 5.8,
+    "source_fingerprints": [
+      "600887-2026-H1",
+      "600887-2025-annual"
+    ]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-09-01",
+    "share_count": 6325360667,
+    "price_bands": {
+      "initial_entry": [14.50, 15.95],
+      "major_add": [11.60, 14.50],
+      "deep_value": [8.70, 11.60],
+      "extreme_mispricing": [7.25, 8.70]
+    },
+    "source_fingerprints": [
+      "600887-2026-H1",
+      "600887-price-2026-08-31"
+    ]
+  },
+  "exit_handoff": {
+    "fundamental_status": "intact",
+    "add_permission": "allowed",
+    "evidence_cutoff": "2026-08-27",
+    "weakened_loss_high_percent": null,
+    "broken_loss_high_percent": null
+  },
+  "peer_timing": {
+    "universe": [],
+    "universe_checked_at": null,
+    "last_price_date": null,
+    "status": "insufficient"
+  },
+  "price_snapshot": {
+    "price": 26.50,
+    "price_date": "2026-08-31",
+    "fx_rate": null,
+    "fx_date": null
+  },
+  "invalidation_triggers": [
+    "new_periodic_report_or_profit_warning",
+    "audit_or_governance_event",
+    "additional_material_ausnutria_impairment",
+    "interest_bearing_liabilities_continue_to_rise_materially"
+  ],
+  "updated_at": "2026-09-01"
+}

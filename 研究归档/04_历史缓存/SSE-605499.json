@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.2",
+  "company_identity": {
+    "legal_name": "东鹏饮料（集团）股份有限公司",
+    "security": "605499",
+    "market": "SSE",
+    "currency": "CNY",
+    "share_class": "A",
+    "identity_checked_at": "2026-09-05"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 75.0,
+    "evidence_coverage_percent": 90.0,
+    "confidence": "high",
+    "evidence_cutoff": "2026-08-30",
+    "source_fingerprints": ["605499-2026-h1", "formal-pipeline-2026-08-30"]
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "605499-2026-h1",
+    "evidence_cutoff": "2026-08-30",
+    "base_eps": 7.630095238095,
+    "bear_eps": 6.485580952381,
+    "forecast_years": ["2026", "2027", "2028"],
+    "base_eps_path": [7.539854, 8.690341, 9.947150],
+    "bear_eps_path": [6.408876, 6.952273, 7.460363],
+    "neutral_roe_percent": 38.7,
+    "bear_roe_percent": 30.1,
+    "neutral_roa_percent": 14.5,
+    "bear_roa_percent": 14.4,
+    "source_fingerprints": ["605499-2026-h1", "eastmoney-consensus-2026-08-30"]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-09-05",
+    "valuation_model_version": "ttm-pr-dupont-v4",
+    "company_type": "stable",
+    "stable_three_year_status": "strict_stable",
+    "ttm_period_end": "2026-06-30",
+    "pe_ttm": 18.014934,
+    "roe_ttm_percent": 33.97,
+    "pr_ttm": 0.53,
+    "roe_average_equity_method": "two_point_average_after_h_share_issuance",
+    "extreme_roe_review_required": true,
+    "roe_reliability": "usable_with_caution",
+    "pr_roe_role": "primary_path_after_ah_capital_structure_rebuild",
+    "share_count": 734199310,
+    "ttm_attributable_net_profit": 4907314172.9,
+    "ttm_eps_current_share_count": 6.683899,
+    "pe_ttm_current_share_count": 18.014934,
+    "ttm_revenue": 22581445252.13,
+    "ttm_pr_pe_path": 0.530,
+    "ttm_pr_pb_path": null,
+    "neutral_pr": 0.466,
+    "bear_pr": 0.599,
+    "decision_pr": 0.552,
+    "dupont_ttm": {
+      "net_margin_percent": 21.73,
+      "asset_turnover": 0.72,
+      "equity_multiplier": 2.16,
+      "roa_percent": 15.70,
+      "roe_percent": 33.97,
+      "average_method": "two_point_average_after_h_share_issuance"
+    },
+    "roa_adjustment": {
+      "status": "corrected",
+      "original_roa_percent": 16.72,
+      "corrected_roa_percent": 15.70,
+      "profit_numerator": "TTM attributable net income CNY 4.9073141729 billion",
+      "asset_denominator_method": "average of pre-period and post-H-share-issuance total assets",
+      "formula": "4.9073141729 / ((26.72073486803 + 35.80025035701) / 2) = 15.70%",
+      "reason": "H-share financing materially increased the asset base, so the old scanner ROA denominator was no longer comparable",
+      "decision_use": "quality_and_leverage_check_only"
+    },
+    "price_bands": {
+      "initial_entry": [109.08, 119.99],
+      "major_add": [87.26, 109.08],
+      "deep_value": [65.45, 87.26],
+      "extreme_mispricing": [43.63, 65.45]
+    },
+    "source_fingerprints": ["605499-2025-annual", "605499-2026-h1"]
+  },
+  "exit_handoff": {
+    "fundamental_status": "intact",
+    "add_permission": "paused_above_entry_pr",
+    "historical_peak_pr_sample_count": 3,
+    "historical_peak_pr_samples": [1.436, 1.068, 0.820],
+    "historical_peak_pr_average": 1.108,
+    "historical_peak_pr_median": 1.068,
+    "historical_h": 1.0,
+    "historical_s": 0.85,
+    "historical_m": 1.0,
+    "soft_exit_price": 208.32,
+    "hard_exit_price": 245.08,
+    "evidence_cutoff": "2026-09-02"
+  },
+  "peer_timing": {
+    "universe": ["9633", "2460", "603156", "603711", "300997"],
+    "universe_checked_at": "2026-09-02",
+    "last_price_date": "2026-09-01 scanner; daily history through 2026-08-31",
+    "status": "bottoming_candidate",
+    "confidence": "medium",
+    "target_structural_role": "strong_energy_drink_category_leader",
+    "strong_benchmark_group": ["605499", "9633"],
+    "neutral_group": ["2460", "603156"],
+    "structural_weak_group": ["603711", "300997"],
+    "weak_peers_stopped_new_lows_count": 2,
+    "target_sessions_since_new_20d_low": 6,
+    "counterevidence": "2460 remained at a new 20-day low and broad recovery is not confirmed"
+  },
+  "price_snapshot": {
+    "price": 120.41,
+    "price_date": "2026-09-04"
+  },
+  "position_handoff": {
+    "status": "paused_above_entry_pr",
+    "recommended_percent": 0.0,
+    "valuation_supported_cumulative_percent_low": 0.0,
+    "valuation_supported_cumulative_percent_high": 0.0,
+    "constraint": "decision_pr_above_0.55_entry_threshold"
+  },
+  "invalidation_triggers": [
+    "new_periodic_report_or_profit_warning",
+    "core_energy_drink_growth_turns_negative_or_second_curves_fail_to_offset",
+    "operating_cash_flow_to_net_income_falls_below_80_percent",
+    "price_below_112.91_or_above_132.55",
+    "weak_peers_resume_new_20d_lows"
+  ],
+  "run_metadata": {
+    "mode": "full_rebuild_completed",
+    "official_change_check_at": "2026-09-05",
+    "next_mode_if_no_new_filing": "quick_refresh"
+  },
+  "updated_at": "2026-09-05"
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "company_identity": {
+    "legal_name": "青岛啤酒股份有限公司",
+    "security": "600600",
+    "market": "SSE",
+    "currency": "CNY",
+    "share_class": "A",
+    "identity_checked_at": "2026-08-31"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 71.3,
+    "evidence_coverage_percent": 88.0,
+    "confidence": "medium",
+    "evidence_cutoff": "2026-08-31",
+    "source_fingerprints": [
+      "600600-2026-H1",
+      "600600-2025-annual"
+    ]
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "600600-2026-H1",
+    "evidence_cutoff": "2026-08-31",
+    "base_eps": 3.39,
+    "bear_eps": 3.12,
+    "neutral_roe_percent": 15.22,
+    "bear_roe_percent": 14.18,
+    "neutral_roa_percent": 8.82,
+    "bear_roa_percent": 8.25,
+    "source_fingerprints": [
+      "600600-2026-H1",
+      "600600-2025-annual"
+    ]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-08-31",
+    "share_count": 1364195121,
+    "price_bands": {
+      "initial_entry": [23.96, 26.36],
+      "major_add": [19.17, 23.96],
+      "deep_value": [14.38, 19.17],
+      "extreme_mispricing": [11.98, 14.38]
+    },
+    "source_fingerprints": [
+      "600600-2026-H1",
+      "600600-price-2026-08-31"
+    ]
+  },
+  "exit_handoff": {
+    "fundamental_status": "intact",
+    "add_permission": "allowed",
+    "evidence_cutoff": "2026-08-31",
+    "weakened_loss_high_percent": 51.7,
+    "broken_loss_high_percent": 75.0
+  },
+  "peer_timing": {
+    "universe": [],
+    "universe_checked_at": null,
+    "last_price_date": null,
+    "status": "insufficient"
+  },
+  "price_snapshot": {
+    "price": 50.70,
+    "price_date": "2026-08-31",
+    "fx_rate": null,
+    "fx_date": null
+  },
+  "invalidation_triggers": [
+    "new_periodic_report_or_profit_warning",
+    "audit_or_governance_event",
+    "share_rights_or_share_count_change",
+    "total_volume_and_revenue_decline_more_than_5_percent_for_two_comparable_periods"
+  ],
+  "updated_at": "2026-09-01"
+}

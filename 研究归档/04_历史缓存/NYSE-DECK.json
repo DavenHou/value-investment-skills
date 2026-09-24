@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.4",
+  "company_identity": {
+    "legal_name": "Deckers Outdoor Corporation",
+    "security": "DECK",
+    "market": "NYSE",
+    "currency": "USD",
+    "identity_checked_at": "2026-09-05"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 80.0,
+    "evidence_coverage_percent": 91.0,
+    "confidence": "high",
+    "evidence_cutoff": "2026-08-30",
+    "source_fingerprints": [
+      "deck-fy2026-10k",
+      "deck-fy2027-q1-2026-07-23"
+    ]
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "deck-fy2027-q1-2026-07-23",
+    "evidence_cutoff": "2026-07-23",
+    "management_fy2027_eps_low": 7.35,
+    "management_fy2027_eps_high": 7.50,
+    "forecast_years": ["FY2027", "FY2028", "FY2029"],
+    "base_eps": 7.534283,
+    "base_eps_path": [7.534283, 8.287711, 9.033605],
+    "bear_eps": 6.027426,
+    "bear_eps_path": [6.027426, 6.215783, 6.323524],
+    "neutral_roe_percent": 40.9,
+    "bear_roe_percent": 37.1,
+    "neutral_roa_percent": 25.246914,
+    "bear_roa_percent": 22.901235,
+    "forecast_roa_basis": "scenario ROE divided by the 2026-06-30 TTM equity multiplier of 1.62; model assumption, not reported fact"
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-09-05",
+    "valuation_model_version": "ttm-pr-dupont-v4",
+    "company_type": "stable",
+    "stable_three_year_status": "strict_stable",
+    "extreme_roe_review_required": true,
+    "roe_reliability": "organic_high_return",
+    "pr_roe_role": "primary_path_after_dupont_roa_review",
+    "pe_ttm": 11.334282,
+    "roe_ttm_percent": 42.56,
+    "pr_ttm": 0.266313,
+    "ttm_pr": 0.266313,
+    "neutral_pr": 0.276628,
+    "bear_pr": 0.305599,
+    "decision_pr": 0.292515,
+    "dupont_ttm": {
+      "net_margin_percent": 18.36,
+      "asset_turnover": 1.43,
+      "equity_multiplier": 1.62,
+      "roa_percent": 26.33,
+      "roe_percent": 42.56,
+      "average_method": "two_point_same_quarter_cross_check"
+    },
+    "roa_adjustment": {
+      "status": "not_required",
+      "original_roa_percent": 26.33,
+      "corrected_roa_percent": null,
+      "profit_numerator": "aligned TTM attributable net income",
+      "asset_denominator_method": "two-point average total assets",
+      "formula": null,
+      "reason": "no material ROA period or asset-denominator distortion identified",
+      "decision_use": "quality_and_leverage_check_only"
+    },
+    "price_bands": {
+      "initial_entry": [136.44, 150.09],
+      "major_add": [109.15, 136.44],
+      "deep_value": [81.87, 109.15],
+      "extreme_mispricing": [54.58, 81.87]
+    },
+    "source_fingerprints": [
+      "formal-pipeline-2026-08-30",
+      "SEC:DECK:FY2026-10K",
+      "SEC:DECK:FY2027-Q1"
+    ]
+  },
+  "exit_handoff": {
+    "exit_policy_version": "historical-h-uncapped-v2",
+    "fundamental_status": "intact",
+    "add_permission": "allowed",
+    "historical_peak_pr_sample_count": 4,
+    "historical_peak_pr_average": 1.079,
+    "historical_peak_pr_median": 1.057,
+    "early_exit_multiplier": 0.85,
+    "historical_h": 1.057,
+    "historical_s": 0.89845,
+    "historical_m": null,
+    "market_risk_review_pr": 1.0,
+    "threshold_prices": {
+      "S": 268.81,
+      "H": 316.25,
+      "M": null,
+      "E": 299.2
+    },
+    "evidence_cutoff": "2026-09-05",
+    "capital_structure_review": "2026-08-31 8-K increased the undrawn unsecured revolver commitment to USD 500 million and extended maturity to 2031-08-27; no new borrowing disclosed"
+  },
+  "peer_timing": {
+    "universe": ["NKE", "ONON", "CROX", "VFC", "UAA"],
+    "universe_checked_at": "2026-09-11",
+    "last_price_date": "2026-09-10",
+    "status": "partial_weak_peer_stabilization_not_confirmed",
+    "target_structural_role": "strong_industry_leader",
+    "strong_or_leader_group": ["DECK", "NKE", "ONON"],
+    "neutral_group": ["CROX"],
+    "structural_weak_group": ["VFC", "UAA"],
+    "weak_peers_stopped_new_lows_count": 1,
+    "target_last_new_20d_low": "2026-09-10",
+    "note": "The refreshed representative peer screen remains partial and does not confirm weak-peer stabilization: NKE, VFC, UAA and CROX continued lower on 2026-09-10; do not treat the target's new low as a sector-bottom confirmation."
+  },
+  "price_snapshot": {
+    "price": 79.68,
+    "price_date": "2026-09-10"
+  },
+  "position_handoff": {
+    "schema_version": "1.7",
+    "status": "executable_information_risk_initial_tranche",
+    "executable_percent_now": 4.0,
+    "conditional_initial_percent": 4.0,
+    "current_information_risk_tranche_percent": 4.0,
+    "valuation_supported_cumulative_percent": 20.0,
+    "broken_case_loss_percent": 50.0,
+    "implied_portfolio_loss_percent_at_initial_tranche": 2.0,
+    "user_single_stock_drawdown_tolerance_percent": 50.0,
+    "portfolio_risk_budget_status": "not_selected_sensitivity_only",
+    "risk_budget_scope": "portfolio loss budgets are sensitivity only unless the user selects one",
+    "max_completed_position_drawdown_percent": 50.0,
+    "completed_ladder_drawdown_status": "pending_exact_ladder",
+    "stock_count_assessment": "assumed_within_policy_by_user",
+    "unallocated_capital_policy": "hold_cash_do_not_fill_to_minimum",
+    "unlocked_only_after_completed_ladder_drawdown_pass_percent": 16.0,
+    "normal_max_percent": 35.0,
+    "constraint": "peer_timing_limits_current_action_to_information_risk_initial_tranche"
+  },
+  "invalidation_triggers": [
+    "new_periodic_report_or_guidance_change",
+    "revolver_draw_or_debt_increase_after_2026-08-31_credit_agreement_amendment",
+    "hoka_or_ugg_growth_breaks_management_guidance",
+    "gross_margin_or_operating_margin_deteriorates_materially",
+    "inventory_or_discounting_outpaces_revenue",
+    "price_below_73.31_or_above_86.05"
+  ],
+  "run_metadata": {
+    "mode": "quick_refresh",
+    "official_change_check_at": "2026-09-11",
+    "schema_migrated_at": "2026-09-11",
+    "next_mode_if_no_new_filing": "quick_refresh"
+  },
+  "updated_at": "2026-09-11"
+}

@@ -1,0 +1,478 @@
+{
+  "schema_version": "1.4",
+  "scope": "quick_valuation",
+  "run_override": {
+    "pb_ceiling_8x": "temporarily_bypassed_for_this_TJX_run_only",
+    "permanent_rule_change": false
+  },
+  "company_identity": {
+    "legal_name": "The TJX Companies, Inc.",
+    "security": "NYSE:TJX",
+    "market": "NYSE",
+    "currency": "USD",
+    "share_class": "common stock",
+    "identity_checked_at": "2026-09-23"
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "upstream_research_status": "skipped_by_scope",
+    "latest_filing_id": "SEC:0000109198-26-000051",
+    "latest_financial_filing_id": "SEC:0000109198-26-000048",
+    "evidence_cutoff": "2026-08-28",
+    "accounting_basis": "GAAP forecast; 2027 base approximates management GAAP EPS guide, 2028-2029 are analyst scenarios",
+    "forecast_years": [
+      "FY2027",
+      "FY2028",
+      "FY2029"
+    ],
+    "base_eps": 5.336005434782609,
+    "bear_eps": 4.551219512195122,
+    "neutral_roe_percent": 54.59475425341108,
+    "bear_roe_percent": 50.94536894757003,
+    "neutral_roa_percent": 15.818220648894432,
+    "bear_roa_percent": 14.7456072665417,
+    "scenarios": {
+      "bear": [
+        {
+          "fiscal_year": "FY2027",
+          "revenue_usd_m": 62200,
+          "pretax_margin_percent": 10.8,
+          "tax_rate_assumption_percent": 25,
+          "attributable_net_profit_usd_m": 5038.200000000001,
+          "diluted_shares_assumption_m": 1107,
+          "eps_usd": 4.551219512195122,
+          "equity_start_usd_m": 10190.0,
+          "dividends_assumption_usd_m": 2100,
+          "buybacks_assumption_usd_m": 2200,
+          "stock_comp_and_issuance_assumption_usd_m": 400,
+          "equity_end_usd_m": 11328.2,
+          "average_attributable_equity_usd_m": 10759.1,
+          "assets_start_usd_m": 35767.0,
+          "assets_end_assumption_usd_m": 37700,
+          "average_total_assets_usd_m": 36733.5,
+          "roe_percent": 46.827336859030964,
+          "roa_percent": 13.715545755237047
+        },
+        {
+          "fiscal_year": "FY2028",
+          "revenue_usd_m": 64000,
+          "pretax_margin_percent": 10.3,
+          "tax_rate_assumption_percent": 25,
+          "attributable_net_profit_usd_m": 4944.0,
+          "diluted_shares_assumption_m": 1086,
+          "eps_usd": 4.552486187845304,
+          "equity_start_usd_m": 11328.2,
+          "dividends_assumption_usd_m": 2100,
+          "buybacks_assumption_usd_m": 1800,
+          "stock_comp_and_issuance_assumption_usd_m": 400,
+          "equity_end_usd_m": 12772.2,
+          "average_attributable_equity_usd_m": 12050.2,
+          "assets_start_usd_m": 37700,
+          "assets_end_assumption_usd_m": 39200,
+          "average_total_assets_usd_m": 38450,
+          "roe_percent": 41.028364674445235,
+          "roa_percent": 12.858257477243173
+        },
+        {
+          "fiscal_year": "FY2029",
+          "revenue_usd_m": 66500,
+          "pretax_margin_percent": 10.4,
+          "tax_rate_assumption_percent": 25,
+          "attributable_net_profit_usd_m": 5187.0,
+          "diluted_shares_assumption_m": 1074,
+          "eps_usd": 4.829608938547486,
+          "equity_start_usd_m": 12772.2,
+          "dividends_assumption_usd_m": 2100,
+          "buybacks_assumption_usd_m": 1800,
+          "stock_comp_and_issuance_assumption_usd_m": 400,
+          "equity_end_usd_m": 14459.2,
+          "average_attributable_equity_usd_m": 13615.7,
+          "assets_start_usd_m": 39200,
+          "assets_end_assumption_usd_m": 41000,
+          "average_total_assets_usd_m": 40100,
+          "roe_percent": 38.095727726080916,
+          "roa_percent": 12.935162094763092
+        }
+      ],
+      "base": [
+        {
+          "fiscal_year": "FY2027",
+          "revenue_usd_m": 63600,
+          "pretax_margin_percent": 12.35,
+          "tax_rate_assumption_percent": 25,
+          "attributable_net_profit_usd_m": 5890.950000000001,
+          "diluted_shares_assumption_m": 1104,
+          "eps_usd": 5.336005434782609,
+          "equity_start_usd_m": 10190.0,
+          "dividends_assumption_usd_m": 2100,
+          "buybacks_assumption_usd_m": 2875,
+          "stock_comp_and_issuance_assumption_usd_m": 400,
+          "equity_end_usd_m": 11505.95,
+          "average_attributable_equity_usd_m": 10847.975,
+          "assets_start_usd_m": 35767.0,
+          "assets_end_assumption_usd_m": 38500,
+          "average_total_assets_usd_m": 37133.5,
+          "roe_percent": 54.30460523738302,
+          "roa_percent": 15.864246569808934
+        },
+        {
+          "fiscal_year": "FY2028",
+          "revenue_usd_m": 67500,
+          "pretax_margin_percent": 11.9,
+          "tax_rate_assumption_percent": 25,
+          "attributable_net_profit_usd_m": 6024.375,
+          "diluted_shares_assumption_m": 1088,
+          "eps_usd": 5.537109375,
+          "equity_start_usd_m": 11505.95,
+          "dividends_assumption_usd_m": 2200,
+          "buybacks_assumption_usd_m": 2500,
+          "stock_comp_and_issuance_assumption_usd_m": 400,
+          "equity_end_usd_m": 13230.325,
+          "average_attributable_equity_usd_m": 12368.1375,
+          "assets_start_usd_m": 38500,
+          "assets_end_assumption_usd_m": 41100,
+          "average_total_assets_usd_m": 39800,
+          "roe_percent": 48.70882944178135,
+          "roa_percent": 15.136620603015075
+        },
+        {
+          "fiscal_year": "FY2029",
+          "revenue_usd_m": 71800,
+          "pretax_margin_percent": 11.7,
+          "tax_rate_assumption_percent": 25,
+          "attributable_net_profit_usd_m": 6300.450000000001,
+          "diluted_shares_assumption_m": 1071,
+          "eps_usd": 5.882773109243698,
+          "equity_start_usd_m": 13230.325,
+          "dividends_assumption_usd_m": 2300,
+          "buybacks_assumption_usd_m": 2400,
+          "stock_comp_and_issuance_assumption_usd_m": 400,
+          "equity_end_usd_m": 15230.775000000001,
+          "average_attributable_equity_usd_m": 14230.550000000001,
+          "assets_start_usd_m": 41100,
+          "assets_end_assumption_usd_m": 44000,
+          "average_total_assets_usd_m": 42550,
+          "roe_percent": 44.27411449311517,
+          "roa_percent": 14.807168037602821
+        }
+      ],
+      "bull": [
+        {
+          "fiscal_year": "FY2027",
+          "revenue_usd_m": 64500,
+          "pretax_margin_percent": 12.5,
+          "tax_rate_assumption_percent": 25,
+          "attributable_net_profit_usd_m": 6046.875,
+          "diluted_shares_assumption_m": 1104,
+          "eps_usd": 5.477241847826087,
+          "equity_start_usd_m": 10190.0,
+          "dividends_assumption_usd_m": 2100,
+          "buybacks_assumption_usd_m": 3000,
+          "stock_comp_and_issuance_assumption_usd_m": 400,
+          "equity_end_usd_m": 11536.875,
+          "average_attributable_equity_usd_m": 10863.4375,
+          "assets_start_usd_m": 35767.0,
+          "assets_end_assumption_usd_m": 39000,
+          "average_total_assets_usd_m": 37383.5,
+          "roe_percent": 55.66262980755401,
+          "roa_percent": 16.175251113459147
+        },
+        {
+          "fiscal_year": "FY2028",
+          "revenue_usd_m": 69500,
+          "pretax_margin_percent": 12.3,
+          "tax_rate_assumption_percent": 25,
+          "attributable_net_profit_usd_m": 6411.375,
+          "diluted_shares_assumption_m": 1081,
+          "eps_usd": 5.9309666975023125,
+          "equity_start_usd_m": 11536.875,
+          "dividends_assumption_usd_m": 2300,
+          "buybacks_assumption_usd_m": 3100,
+          "stock_comp_and_issuance_assumption_usd_m": 400,
+          "equity_end_usd_m": 12948.25,
+          "average_attributable_equity_usd_m": 12242.5625,
+          "assets_start_usd_m": 39000,
+          "assets_end_assumption_usd_m": 43000,
+          "average_total_assets_usd_m": 41000,
+          "roe_percent": 52.36955090080202,
+          "roa_percent": 15.6375
+        },
+        {
+          "fiscal_year": "FY2029",
+          "revenue_usd_m": 74800,
+          "pretax_margin_percent": 12.3,
+          "tax_rate_assumption_percent": 25,
+          "attributable_net_profit_usd_m": 6900.299999999999,
+          "diluted_shares_assumption_m": 1067,
+          "eps_usd": 6.46701030927835,
+          "equity_start_usd_m": 12948.25,
+          "dividends_assumption_usd_m": 2500,
+          "buybacks_assumption_usd_m": 3200,
+          "stock_comp_and_issuance_assumption_usd_m": 400,
+          "equity_end_usd_m": 14548.55,
+          "average_attributable_equity_usd_m": 13748.4,
+          "assets_start_usd_m": 43000,
+          "assets_end_assumption_usd_m": 47000,
+          "average_total_assets_usd_m": 45000,
+          "roe_percent": 50.18984027232259,
+          "roa_percent": 15.333999999999998
+        }
+      ]
+    },
+    "assumptions": {
+      "revenue": "FY2027 base +5.3% versus FY2026; FY2028/29 base store expansion and low-single-digit comps; bear weaker demand and margin; bull stronger comps and store productivity",
+      "pretax_margin": "FY2027 base 12.35% aligns with company GAAP 12.3%-12.4% guide; subsequent years fade toward 11.7%-11.9%; bear 10.3%-10.8%, bull 12.3%-12.5%",
+      "tax": "25% in all scenarios, based on recent statutory-effective range",
+      "balance_sheet": "FY2026 audited equity and assets are opening balances. Annual ending equity = opening equity + forecast GAAP profit - dividends - buybacks + stock compensation and issuance; ending assets reflect scenario store leases, capital spending, inventory and retained cash. Asset end values are explicit assumptions, with FY2027 above observed FY2027 H1 assets 37115m.",
+      "buybacks": "FY2027 base $2.875bn matches company $2.75-$3.0bn plan; later and bear/bull buybacks are scenario assumptions",
+      "confidence": "medium; FY2028 and FY2029 are not guidance"
+    },
+    "source_fingerprints": [
+      "SEC:0000109198-26-000048",
+      "SEC:0000109198-26-000008",
+      "SEC:0000109198-26-000045"
+    ]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "valuation_model_version": "ttm-pr-cutoff-locked-v5",
+    "calculated_at": "2026-09-24",
+    "ttm_period_end": "2026-08-01",
+    "company_type": "stable",
+    "stable_three_year_status": "strict_stable",
+    "extreme_roe_review_required": true,
+    "roe_reliability": "usable_with_caution",
+    "roe_review_evidence": {
+      "ttm_roa_percent": 17.076551758107986,
+      "ttm_lease_inclusive_roic_percent": 32.87597879355372,
+      "ttm_fcf_usd_m": 5876,
+      "equity_trend_usd_m": [
+        6364,
+        7302,
+        8393,
+        10190,
+        10651
+      ],
+      "ttm_equity_multiplier": 3.578726029639516,
+      "interest_debt_aug2025_usd_m": 2867,
+      "interest_debt_aug2026_usd_m": 2871,
+      "normal_capital_roe_recalculation_triggered": false
+    },
+    "historical_financial_years": [
+      {
+        "fy": "FY2024",
+        "ni_m": 4474,
+        "eq_start_m": 6364,
+        "eq_end_m": 7302,
+        "assets_start_m": 28349,
+        "assets_end_m": 29747,
+        "roe_percent": 65.4763647007171,
+        "roa_percent": 15.402093087303772
+      },
+      {
+        "fy": "FY2025",
+        "ni_m": 4864,
+        "eq_start_m": 7302,
+        "eq_end_m": 8393,
+        "assets_start_m": 29747,
+        "assets_end_m": 31749,
+        "roe_percent": 61.981522777954766,
+        "roa_percent": 15.818915051385456
+      },
+      {
+        "fy": "FY2026",
+        "ni_m": 5494,
+        "eq_start_m": 8393,
+        "eq_end_m": 10190,
+        "assets_start_m": 31749,
+        "assets_end_m": 35767,
+        "roe_percent": 59.12931173653339,
+        "roa_percent": 16.274660821138692
+      }
+    ],
+    "historical_average_roe_percent": 62.195733071735084,
+    "historical_bear_roe_anchor_percent": 59.12931173653339,
+    "historical_bear_roa_anchor_percent": 16.274660821138692,
+    "ttm_attributable_net_profit_usd_m": 6067.0,
+    "ttm_diluted_eps": 5.4,
+    "pe_ttm": 24.220370370370368,
+    "roe_ttm_percent": 61.11230027322748,
+    "roa_ttm_percent": 17.076551758107986,
+    "pr_ttm": 0.3963256212265504,
+    "decision_roe_percent": 50.94536894757003,
+    "decision_pr": 0.47541848985913804,
+    "normalized_position": 0.5446928772567875,
+    "governed_by": "company_history",
+    "pb": 13.521896580117359,
+    "pb_ceiling_breach": true,
+    "pb_veto_waived_this_run": true,
+    "pb8_equivalent_price_usd": 77.37967775456235,
+    "share_count": 1101167677,
+    "roe_average_equity_method": "five-quarter-end time-weighted average, Aug2025 to Aug2026",
+    "calculation_basis_id": "NYSE:TJX:GAAP_TTM_2026-08-01:price_2026-09-22:PB8_one_run_exception",
+    "company_pr_history": {
+      "historical_peak_status": "valid_low_confidence",
+      "E_market": 1,
+      "E_company": 0.872819362451492,
+      "E": 0.872819362451492,
+      "samples": [
+        {
+          "peak_date": "2022-01-04",
+          "month_high_price_usd": 77.35,
+          "eps_ttm_usd": 2.19,
+          "three_year_weighted_roe_percent": 40.46614479769779,
+          "three_year_annual_roe_percent": {
+            "FY2019": 58.715772027969635,
+            "FY2020": 60.9476086366161,
+            "FY2021": 1.735053728507626
+          },
+          "ttm_roe_percent": 43.76851799867348,
+          "execution_roe_percent": 40.46614479769779,
+          "peak_pr": 0.872819362451492,
+          "drawdown_confirmed_close_2022-05-11_usd": 54.99,
+          "drawdown_percent": -28.90756302521008,
+          "quality": "valid; pandemic year FY2021 depresses three-year ROE and lowers historical confidence"
+        },
+        {
+          "peak_date": "2026-06-11",
+          "month_high_price_usd": 170,
+          "eps_ttm_usd": 5.14,
+          "ttm_roe_percent": 61.15981831625646,
+          "execution_roe_percent": 61.15981831625646,
+          "peak_pr": 0.540778747740301,
+          "quality": "provisional current cycle; more than 20% drawdown already observed"
+        }
+      ],
+      "historical_fy2019_2021_equity_quarters_usd_m": {
+        "FY2019": [
+          5148.309,
+          5262.408,
+          5227.073,
+          5256.873,
+          5048.606
+        ],
+        "FY2020": [
+          5048.606,
+          5131.895,
+          5302.612,
+          5542.532,
+          5948.212
+        ],
+        "FY2021": [
+          5948.212,
+          4739.218,
+          4660.569,
+          5566.756,
+          5832.684
+        ]
+      }
+    },
+    "market_pr_policy_version": "hk-dynamic-c-both-sides-v1",
+    "market_coefficient_c": 1,
+    "price_bands": {
+      "0.5": {
+        "target_pr": 0.436409681225746,
+        "price_usd": 120.05848200062012,
+        "change_from_current_percent": -8.205151769538865
+      },
+      "0.4": {
+        "target_pr": 0.34912774498059684,
+        "price_usd": 96.0467856004961,
+        "change_from_current_percent": -26.564121415631092
+      },
+      "0.3": {
+        "target_pr": 0.2618458087354476,
+        "price_usd": 72.03508920037207,
+        "change_from_current_percent": -44.92309106172332
+      },
+      "0.8": {
+        "target_pr": 0.6982554899611937,
+        "price_usd": 192.0935712009922,
+        "change_from_current_percent": 46.871757168737815
+      },
+      "0.9": {
+        "target_pr": 0.7855374262063428,
+        "price_usd": 216.1052676011162,
+        "change_from_current_percent": 65.23072681483004
+      },
+      "1.0": {
+        "target_pr": 0.872819362451492,
+        "price_usd": 240.11696400124023,
+        "change_from_current_percent": 83.58969646092227
+      }
+    },
+    "source_fingerprints": [
+      "https://www.sec.gov/Archives/edgar/data/109198/000010919826000048/tjx-20260801.htm",
+      "https://www.sec.gov/Archives/edgar/data/109198/000010919826000008/tjx-20260131.htm",
+      "https://www.sec.gov/Archives/edgar/data/109198/000010919826000045/tjxq2fy27earningspressrele.htm",
+      "https://www.sec.gov/Archives/edgar/data/109198/000010919821000030/tjx-20211030.htm",
+      "https://www.sec.gov/Archives/edgar/data/109198/000010919821000006/tjx-20210130.htm",
+      "https://investor.tjx.com/investors/tjx-stock/historical-stock-quote",
+      "https://www.sec.gov/Archives/edgar/data/109198/000010919826000051/0000109198-26-000051-index.htm"
+    ]
+  },
+  "exit_handoff": {
+    "status": "low_confidence_two_peaks",
+    "exit_policy_version": "historical-h-uncapped-v2",
+    "fundamental_status": "intact_with_watch_items",
+    "add_permission": "not_allowed_above_first_band",
+    "evidence_cutoff": "2026-09-22",
+    "historical_peak_pr_sample_count": 2,
+    "historical_peak_pr_average": 0.7067990550958965,
+    "historical_peak_pr_median": 0.7067990550958965,
+    "early_exit_multiplier": 0.85,
+    "historical_h": 0.7067990550958965,
+    "historical_s": 0.6007791968315119,
+    "historical_m": 0.7898092087736943,
+    "market_risk_review_pr": 0.872819362451492,
+    "threshold_prices": {
+      "S": 165.27735632847333,
+      "H": 194.44394862173334,
+      "M": 217.2804563114868,
+      "E": 240.11696400124023
+    },
+    "primary_exit_position_current": 0.5446928772567875,
+    "primary_exit_stage": "below_0.80",
+    "weakened_case_loss_percent_at_constant_pe": -15.718157181571812,
+    "fundamental_triggers": [
+      "two consecutive quarters comparable sales and adjusted merchandise margin deteriorate",
+      "TTM free cash flow stops covering ordinary dividends without temporary working capital reason",
+      "inventory growth persistently outpaces sales with markdown pressure"
+    ]
+  },
+  "pure_cash_handoff": {
+    "status": "lower_bound_only",
+    "as_of": "2026-08-01",
+    "cash_usd_m": 6004,
+    "interest_debt_usd_m": 2871,
+    "net_cash_lower_bound_usd_m": 3133,
+    "market_cap_usd_m": 144021.72047482998,
+    "coverage_percent": 2.175366319518131,
+    "strict_net_financial_assets_coverage_status": "insufficient_without_investment_liquidity_review"
+  },
+  "price_snapshot": {
+    "price": 130.79,
+    "price_date": "2026-09-22",
+    "currency": "USD",
+    "source": "TJX company historical stock quote / LSEG"
+  },
+  "cache_status": "partial: selector assumes uncapped market E=1 while valuation and exit authorities cap E at company history; do not quick-refresh from this cache without revalidation",
+  "source_urls": {
+    "financial_10q": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000048/tjx-20260801.htm",
+    "financial_10k": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000008/tjx-20260131.htm",
+    "earnings_release": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000045/tjxq2fy27earningspressrele.htm",
+    "historical_2022_10q": "https://www.sec.gov/Archives/edgar/data/109198/000010919821000030/tjx-20211030.htm",
+    "historical_2021_10k": "https://www.sec.gov/Archives/edgar/data/109198/000010919821000006/tjx-20210130.htm",
+    "historical_quote": "https://investor.tjx.com/investors/tjx-stock/historical-stock-quote",
+    "latest_nonfinancial_8k": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000051/0000109198-26-000051-index.htm"
+  },
+  "invalidation_triggers": [
+    "new 10-Q or 10-K",
+    "new company earnings guidance",
+    "share cancellation or issuance",
+    "material capital-return or debt change",
+    "new historical peak or drawdown cycle",
+    "PB exception expires after this run"
+  ],
+  "updated_at": "2026-09-24"
+}

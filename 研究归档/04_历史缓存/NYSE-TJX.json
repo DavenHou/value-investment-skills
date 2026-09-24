@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.2",
+  "company_identity": {
+    "legal_name": "The TJX Companies, Inc.",
+    "security": "NYSE:TJX",
+    "market": "NYSE",
+    "currency": "USD",
+    "share_class": "common stock",
+    "identity_checked_at": "2026-09-08"
+  },
+  "research_handoff": {
+    "status": "pass",
+    "score": 79.5,
+    "evidence_coverage_percent": 92.0,
+    "confidence": "medium-high",
+    "evidence_cutoff": "2026-08-19",
+    "source_fingerprints": ["SEC:0000109198-26-000048", "SEC:0000109198-26-000008", "SEC:0000109198-26-000015"]
+  },
+  "forecast_handoff": {
+    "status": "usable",
+    "latest_filing_id": "SEC:0000109198-26-000048",
+    "evidence_cutoff": "2026-08-28",
+    "accounting_basis": "FY2027 uses company tariff-refund-excluded adjusted EPS guidance; FY2028-FY2029 are explicitly labelled management-guidance-anchored model scenarios. All forecast EPS excludes the FY2027 Q2 tariff-refund benefit; FY2026 TTM also excludes the FY2026 Q4 non-recurring interchange-fee settlement for comparability.",
+    "base_eps": 5.175,
+    "bear_eps": 4.55,
+    "forecast_years": ["FY2027", "FY2028", "FY2029"],
+    "base_eps_path": [5.175, 5.53, 5.87],
+    "bear_eps_path": [4.55, 4.55, 4.83],
+    "base_net_income_millions": [5708.025, 6000.05, 6269.16],
+    "bear_net_income_millions": [5018.65, 4936.75, 5158.44],
+    "base_average_equity_millions": [10888.0, 12303.0, 13790.0],
+    "bear_average_equity_millions": [10537.0, 11319.0, 12277.0],
+    "base_average_assets_millions": [36984.0, 39450.0, 42000.0],
+    "bear_average_assets_millions": [36634.0, 38000.0, 39050.0],
+    "base_roe_path_percent": [52.42, 48.77, 45.46],
+    "bear_roe_path_percent": [47.63, 43.61, 42.02],
+    "base_roa_path_percent": [15.43, 15.21, 14.93],
+    "bear_roa_path_percent": [13.70, 12.99, 13.21],
+    "neutral_roe_percent": 56.62,
+    "bear_roe_percent": 51.59,
+    "neutral_roa_percent": 15.42,
+    "bear_roa_percent": 14.57,
+    "scenario_assumptions": {
+      "FY2027_base_fact": "Company guided to adjusted (tariff-refund-excluded) diluted EPS of $5.15-$5.20; $5.175 is the midpoint.",
+      "FY2028_FY2029_base_model": "4% store growth, low-single-digit comparable sales and continued buybacks produce EPS of $5.53 and $5.87. This is a model assumption, not company guidance.",
+      "bear_model": "Near-flat FY2027-FY2028 EPS at $4.55 from weaker consumer demand and merchandise-margin pressure, followed by modest FY2029 recovery to $4.83. This is a model assumption.",
+      "capital_path": "Share counts of 1,103m, 1,085m and 1,068m reflect the announced FY2027 buyback program followed by slower repurchases; it is a model assumption."
+    },
+    "confidence": "medium",
+    "source_fingerprints": ["TJX:Q2-FY27-release:2026-08-19", "SEC:0000109198-26-000048", "SEC:0000109198-26-000008"]
+  },
+  "valuation_handoff": {
+    "status": "valid",
+    "calculated_at": "2026-09-08",
+    "valuation_model_version": "ttm-pr-dupont-v4-core-standardized",
+    "company_type": "stable_noncyclical_off_price_retail",
+    "stable_three_year_status": "strict_stable",
+    "extreme_roe_review_required": true,
+    "roe_reliability": "usable_with_caution: high ROA is the primary return driver; buybacks compress equity but the current equity multiplier 3.59 is below the three-year median 3.92, so no incremental multiplier cap is applied.",
+    "pr_roe_role": "standardized PE_TTM / standardized ROE_TTM, dynamically adjusted only for the three-year ordinary-dividend payout ratio; ROA is a reliability check and is not substituted into the PR formula.",
+    "share_count_millions": 1123.52,
+    "ttm_eps_diluted_gaap": 5.4,
+    "pe_ttm_gaap": 24.46,
+    "roe_ttm_gaap_percent": 62.17,
+    "pr_ttm_gaap": 0.3934,
+    "core_roe_correction": {
+      "status": "complete_standardized_tax_adjustment",
+      "raw_ttm_net_income_usd_m": 6067.0,
+      "q4_fy2026_interchange_settlement_pre_tax_usd_m": 419.0,
+      "q4_fy2026_effective_tax_rate_percent": 25.82,
+      "after_tax_interchange_settlement_usd_m": 310.83,
+      "q2_fy2027_tariff_refund_eps_benefit_usd": 0.14,
+      "q2_fy2027_diluted_shares_m": 1117.0,
+      "after_tax_tariff_refund_benefit_usd_m": 156.38,
+      "core_ttm_net_income_usd_m": 5599.79,
+      "raw_roe_percent": 62.17,
+      "raw_equity_multiplier": 3.5874,
+      "three_year_equity_multiplier_history": [4.2519, 3.9178, 3.6343],
+      "normal_equity_multiplier": 3.9178,
+      "usable_equity_multiplier": 3.5874,
+      "core_roa_percent": 16.0,
+      "corrected_roe_percent": 57.38,
+      "raw_ttm_eps_diluted_gaap": 5.4,
+      "core_ttm_eps_diluted_usd": 4.9842,
+      "core_pe_ttm": 26.5,
+      "core_pr_ttm_unadjusted": 0.4618,
+      "interpretation": "$419m settlement was converted using the same-quarter actual effective tax rate: (FY2026 tax expense $1,805m - first-nine-month tax expense $1,188m) / (FY2026 pre-tax income $7,299m - first-nine-month pre-tax income $4,909m). The tariff benefit uses the company-disclosed $0.14 EPS effect."
+    },
+    "roe_average_equity_method": "two-point TTM average equity: (August 2, 2025 equity $8,866m + August 1, 2026 equity $10,651m) / 2 = $9,758.5m",
+    "dividend_payout_adjustment": {
+      "ordinary_dividend_payout_percent_FY2024_to_FY2026": [33.17, 33.88, 35.54],
+      "three_year_average_percent": 34.2,
+      "formula": "N = clamp(50 / three-year ordinary-dividend payout %, 1, 2)",
+      "N": 1.4621,
+      "adjusted_pr_ttm": 0.6753,
+      "note": "This is ordinary cash-dividend payout only. Share repurchases are handled through share-count and ROE reliability checks, and are not used to inflate N."
+    },
+    "neutral_pr": 0.6591,
+    "bear_pr": 0.8229,
+    "decision_pr": 0.7491,
+    "scenario_weights": {"neutral_percent": 45, "bear_percent": 55, "industry_adjustment": -10, "reason": "The $0.164 PR gap is material for retail, while tariff and consumer-margin uncertainty persists; bear weight is increased from the neutral-quality default."},
+    "normalization": {
+      "historical_core_roe_percent_FY2024_to_FY2026": [65.48, 61.98, 55.78],
+      "historical_core_roa_percent_FY2024_to_FY2026": [15.4, 15.82, 15.35],
+      "strict_stable_cv_percent": 6.45,
+      "method": "neutral: 60% three-year standardized history plus 20%/12%/8% FY2027/FY2028/FY2029 base; bear: weak historical core year plus bear forecast path.",
+      "forecast_confidence": "medium"
+    },
+    "dupont_ttm": {
+      "net_margin_percent": 8.76,
+      "asset_turnover": 1.83,
+      "equity_multiplier": 3.59,
+      "roa_percent": 16.0,
+      "roe_percent": 57.38,
+      "roe_driver": "high normalized operating margin and asset turnover; equity buybacks remain material but current leverage multiplier is not above its recent normal range."
+    },
+    "roa_adjustment": {
+      "status": "adjusted",
+      "original_roa_percent": 17.33,
+      "corrected_roa_percent": 16.0,
+      "profit_numerator": "standardized TTM net income $5,599.79m",
+      "asset_denominator_method": "two-point average total assets $35,000m",
+      "formula": "($6,067m - $310.83m settlement after tax - $156.38m tariff-refund benefit) / (($32,885m + $37,115m) / 2) = 16.00%",
+      "reason": "The asset denominator is period-aligned; correction is required solely because two identified non-recurring profit items otherwise inflate the TTM numerator.",
+      "decision_use": "quality_and_leverage_check_only; not a PR input"
+    },
+    "price_bands": {
+      "basis": "FY2027 standardized EPS; each USD band is the 45% neutral / 55% bear weighted price unless a bear-PR hard condition requires the more conservative upper bound.",
+      "initial": {"decision_adjusted_pr_range": [0.5, 0.55], "price_usd_range": [89.24, 98.17]},
+      "major": {"decision_adjusted_pr_range": [0.4, 0.5], "price_usd_range": [71.39, 88.3], "bear_adjusted_pr_upper_limit": 0.55},
+      "deep": {"decision_adjusted_pr_range": [0.3, 0.4], "price_usd_range": [53.54, 71.39], "bear_adjusted_pr_upper_limit": 0.5},
+      "extreme": {"decision_adjusted_pr_at_or_below": 0.3, "price_usd_at_or_below": 53.54, "bear_adjusted_pr_upper_limit": 0.4}
+    },
+    "company_pr_history": {
+      "status": "validated_same_standardization_rule",
+      "samples": [
+        {"peak_date": "2018-10-01", "standardized_adjusted_pr": 0.715, "public_financials_by": "2018-08-31", "nonrecurring_check": "No hit for credit-card interchange, settlement agreement, non-recurring gain or litigation settlement in the point-in-time 10-Q text."},
+        {"peak_date": "2020-01-31", "standardized_adjusted_pr": 0.6475, "public_financials_by": "2019-12-03", "nonrecurring_check": "No hit for the same adjustment keywords in the point-in-time 10-Q text."},
+        {"peak_date": "2026-06-11", "intraday_high_usd": 170.0, "standardized_adjusted_pr": 0.9587, "public_financials_by": "2026-05-29", "status": "provisional; realized drawdown exceeds 20%, but the 12-month observation window closes 2027-06."}
+      ],
+      "sample_count": 3,
+      "mean_pr": 0.7737,
+      "median_pr": 0.715,
+      "confidence": "medium; the current-cycle peak remains provisional"
+    },
+    "source_fingerprints": ["SEC:0000109198-26-000048", "SEC:0000109198-26-000008", "TJX:Q2-FY27-release:2026-08-19", "ChartExchange:TJX:2026-09-04-close"]
+  },
+  "exit_handoff": {
+    "fundamental_status": "intact_with_watch_items",
+    "valuation_status": "valid",
+    "valuation_exit_stage": "below_H_above_S",
+    "add_permission": "not_allowed_current_price_above_initial_band",
+    "evidence_cutoff": "2026-09-08",
+    "historical_peak_pr_samples": {"sample_count": 3, "mean_pr": 0.7737, "median_pr": 0.715, "confidence": "medium; 2026 peak provisional"},
+    "exit_anchors": {
+      "S_early_review_pr": 0.6078,
+      "H_historical_peak_pr": 0.715,
+      "M_accelerated_review_pr": 0.8575,
+      "E_market_risk_review_pr": 1.0,
+      "formula": "H=min(mean PR, median PR, 1.00); S=0.85*H; M=(H+1.00)/2",
+      "price_map_usd": {"S": 118.88, "H": 139.86, "M": 167.74, "E": 195.61},
+      "cumulative_reduction_guidance": {"S": "10%-15% after earnings and thesis reconfirmation", "H": "30%-40% after the same reconfirmation", "M": "50%-70%", "E": "hard-exit review, not automatic liquidation"}
+    },
+    "weakened_case": {"FY2027_bear_eps": 4.55, "bear_normalized_roe_percent": 51.59, "adjusted_pr": 0.5, "price_usd": 80.27, "loss_from_current_percent": -39.23},
+    "broken_case": {"user_stress_tolerance_percent": 50.0, "price_usd": 66.05, "meaning": "Risk-budget boundary rather than a stop-loss or a forecast price target."},
+    "fundamental_exit_triggers": ["Two consecutive quarters of comparable-sales and merchandise-margin deterioration versus management plan", "Operating cash flow after capital expenditure fails to cover ordinary dividends over a rolling year without a disclosed temporary working-capital reason", "Inventory growth materially outpaces sales with recurring markdown pressure", "A material deterioration in TJX buying advantage, value proposition or capital-return discipline"]
+  },
+  "peer_timing": {
+    "universe": ["TJX", "ROST", "BURL", "KSS", "OLLI"],
+    "roles": {"TJX": "structural leader", "ROST": "structural leader / direct off-price peer", "BURL": "structurally weaker off-price peer", "KSS": "department-store weakness proxy", "OLLI": "closeout-value retail weakness proxy"},
+    "universe_checked_at": "2026-09-08",
+    "price_cutoff": "2026-09-04 (KSS available through 2026-09-02 only)",
+    "status": "mixed_no_unlock",
+    "valid_weak_denominator": 3,
+    "required_stabilized_count": 2,
+    "stabilized_count": 1,
+    "reason": "KSS stopped making new lows after August 26. BURL was still making new lows through August 31 and its five-trading-day stability test is not met; OLLI made a new low on September 3. ROST has stabilized after September 1 but is a leader peer, not counted in the weak denominator. Thus only 1 of 3 valid weak peers meets the five-trading-day test, below the required ceil(3*40%)=2. This timing layer does not alter value or target size.",
+    "coverage_note": "样本覆盖有限：已列出全部可比有效弱势观察对象；不足八家不会自动终止判断。"
+  },
+  "position_handoff": {
+    "status": "executable_wait_for_price",
+    "assumed_current_position_percent": 0.0,
+    "recommended_percent_now": 0.0,
+    "valuation_supported_cumulative_percent": 0.0,
+    "current_action": "价格 $132.09 高于首仓上沿 $98.17；等待，不因短线下跌或同业反弹提前建仓。",
+    "tiers": [
+      {"condition": "initial band and peer timing confirmed", "price_usd": [89.24, 98.17], "new_percent": 4.0, "cumulative_percent": 4.0},
+      {"condition": "major band; bear PR condition also met", "price_usd": [71.39, 88.3], "new_percent": 8.0, "cumulative_percent": 12.0},
+      {"condition": "deep band and fundamentals intact", "price_usd": [53.54, 71.39], "new_percent": 8.0, "cumulative_percent": 20.0},
+      {"condition": "extreme band, non-company-specific panic and thesis intact", "price_usd_at_or_below": 53.54, "new_percent": 5.0, "cumulative_percent": 25.0}
+    ],
+    "absolute_cap_percent": 35.0,
+    "adopted_cap_percent": 25.0,
+    "constraint": "Medium-confidence earnings path, retail/tariff sensitivity and ongoing buyback-driven equity shrinkage keep the adopted cap below the portfolio absolute maximum."
+  },
+  "price_snapshot": {"price": 132.09, "price_date": "2026-09-04", "source": "ChartExchange", "currency": "USD"},
+  "invalidation_triggers": ["new 10-Q, 10-K, earnings release or material guidance change", "audit, governance, control or capital-structure event", "new information on settlement/tariff items", "FY2027 Q3 result", "BURL, KSS or OLLI changes the weak-peer stabilization count"],
+  "run_metadata": {
+    "mode": "earnings_update",
+    "official_change_check_at": "2026-09-08",
+    "refreshed_modules": ["official filing check", "TTM core-profit standardization", "three-year forecast", "PR and price bands", "historical peak samples and exit anchors", "peer timing", "position tiers"],
+    "next_mode_if_no_new_filing": "quick_refresh",
+    "validation_note": "JSON syntax and targeted consistency checks passed. The optional official skill validator was not run because PyYAML is unavailable in this environment."
+  },
+  "updated_at": "2026-09-08"
+}
